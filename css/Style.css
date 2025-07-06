@@ -16,7 +16,48 @@ body{
     font-family: var(--fuentes);
 }
 
-/*hero*/
+.nav-logo {
+  width: 70px;
+  height: 100%;
+}
+.bg-custom {
+  background-color:  #141414;
+}
+span {
+  color: #fff;
+}
+span:hover {
+  color: var(--rojo);
+}
+.barra-busqueda {
+  padding: 20px;
+  display: flex;
+ 
+}
+
+.input-icono {
+  position: relative;
+  width: 300px;
+  ;
+}
+
+.input-icono input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+
+}
+
+.input-icono .fa-search {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(177, 36, 36);
+}
+
 
 .hero {
   height: 90vh;
@@ -76,3 +117,4 @@ body{
 .btn-info {
   margin-right: 1rem;
 }
+
