@@ -18,68 +18,48 @@
     <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-custom py-2 sticky-top">
-      <div
-        class="container-fluid d-flex justify-content-between align-items-center"
-      >
-        <a class="navbar-brand fw-bold text-white" href="#">
-          <img
-            class="nav-logo"
-            src="./Assets/img/Photoroom_20250704_122014 (1).png"
-            alt="Logo"
-            height="40"
-          />
-        </a>
-
-        <button
-          class="navbar-toggler text-white"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto ms-3">
-            <li class="nav-item">
-              <a class="nav-link fw-bold" href="#"><span>PELÍCULAS</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold" href="#"><span>SERIES</span></a>
-            </li>
-          </ul>
-
-          <div class="barra-busqueda me-3">
-            <div class="input-icono ">
-              <input type="text" placeholder="Buscar series o películas" />
-              <i class="fa fa-search"></i>
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a class="navbar-brand fw-bold text-white" href="#">
+                    <img class="nav-logo" src="./Assets/img/Photoroom_20250704_122014 (1).png" alt="Logo" height="40" />
+                </a>
+    
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#"><span>PELÍCULAS</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#"><span>SERIES</span></a>
+                        </li>
+                    </ul>
+    
+                    <div class="barra-busqueda me-3">
+                        <div class="input-icono ">
+                            <input type="text" placeholder="Buscar series o películas" />
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+    
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link ms-2 fw-bold btn btn-light" href="./Pages/login.html">
+                                <span>INGRESA</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link btn btn-light fw-bold"
+                                href="./Pages/suscripcion.html "><span>SUSCRÍBETE</span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link ms-2 fw-bold btn btn-light"
-                href="./Pages/login.html"
-                data-bs-toggle="modal"
-                data-bs-target="#loginModal"
-              >
-                <span>INGRESA</span>
-              </a>
-            </li>
-            <li class="nav-item ms-2">
-              <a class="nav-link btn btn-light fw-bold" href="./Pages/suscripcion.html "
-                ><span>SUSCRÍBETE</span></a
-              >
-
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        </nav>
     </header>
 
             <!-- HERO -->
@@ -103,6 +83,105 @@
             </div>
         </div>
     </section>
+
+
+        <!-- RECOMENDACIONES -->
+        <section class="container my-5">
+            <h3 class="text-white mb-4">Tus películas favoritas</h3>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="./Assets/img/episodio1.png" class="img-fluid rounded" alt="Recomendación 1" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="./Assets/img/episodio3-img.png" class="img-fluid rounded" alt="Recomendación 2" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="./Assets/img/episodio5-img.png" class="img-fluid rounded" alt="Recomendación 3" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="./Assets/img/episodio5-img.png" class="img-fluid rounded" alt="Recomendación 3" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="./Assets/img/episodio5-img.png" class="img-fluid rounded" alt="Recomendación 3" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="./Assets/img/episodio5-img.png" class="img-fluid rounded" alt="Recomendación 3" />
+                </div>
+            </div>
+        </section>
+
+                <section class="container my-5">
+            <h3 class="text-white mb-4">Series de las que no podes parar de hablar</h3>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="./Assets/img/episodio1.png" class="img-fluid rounded" alt="Recomendación 1" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="./Assets/img/episodio3-img.png" class="img-fluid rounded" alt="Recomendación 2" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="./Assets/img/episodio5-img.png" class="img-fluid rounded" alt="Recomendación 3" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="./Assets/img/episodio5-img.png" class="img-fluid rounded" alt="Recomendación 3" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="./Assets/img/episodio5-img.png" class="img-fluid rounded" alt="Recomendación 3" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="./Assets/img/episodio5-img.png" class="img-fluid rounded" alt="Recomendación 3" />
+                </div>
+            </div>
+        </section>
+
+        <Section>
+            <div class="container">
+                <h2 class="text-center my-5 text-white d-none d-md-block">Elegí tu plan
+                    <hr>
+                </h2>
+                <div class="row gy-3 d-none d-md-flex">
+                    <div class="col-12 col-md-4">
+                        <div class="plan-card card h-100">
+                            <h5 class="text-center text-success">Plan lowcost</h5>
+                            <p class="text-center text-white fw-bold">$999/mes</p>
+                            <ul>
+                                <li class="text-secondary">2 Dispositivos en simuláneo</li>
+                                <li class="text-secondary">Resolución HD</li>
+                                <li class="text-secondary">Contenido limitado</li>
+                            </ul>
+                            <a class="btn  btn-outline-success w-100" href="">Seleccionar</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="plan-card card2 h-100">
+                            <h5 class="text-center text-warning">Plan intermedio</h5>
+                            <p class="text-center  text-white fw-bold">$2999/mes</p>
+                            <ul>
+                                <li class="text-secondary">4 Dispositivos en simuláneo</li>
+                                <li class="text-secondary">Resolución FULL HD</li>
+                                <li class="text-secondary">Contenido limitado</li>
+                            </ul>
+                            <a class="btn btn-outline-warning w-100" href="">Seleccionar</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class=" plan-card card3 h-100 ">
+                            <h5 class="text-center text-danger">Plan VIP</h5>
+                            <p class="text-center  text-white fw-bold">$4999/mes</p>
+                            <ul>
+                                <li class="text-secondary">8 Dispositivos en simuláneo</li>
+                                <li class="text-secondary">Resolución FULL HD 4K</li>
+                                <li class="text-secondary">Contenido limitado</li>
+                            </ul>
+                            <a class="btn btn-outline-danger w-100" href="">Seleccionar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block d-md-none text-center mt-1">
+                    <a href="./Pages/suscripcion.html" class="btn btn-light btn-lg mt-5 fw-bold">SUSCRÍBETE AHORA</a>
+                </div>
+            </div>
+        </Section>
 
         <!-- Modal de la serie -->
         <div class="modal fade" id="modalSerie1" tabindex="-1" aria-labelledby="modalSerie1Label" aria-hidden="true">
