@@ -231,9 +231,10 @@ margin-right: 1rem;
     .formulario input::placeholder {
       color: #bbb;
     }
-    .pagina-error{
-        height: 100vh;
-        text-align: center;
-    }
+  .img-error{
+    width: 300px;
+  }
+
+
 
 
