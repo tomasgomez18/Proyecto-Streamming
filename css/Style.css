@@ -231,5 +231,9 @@ margin-right: 1rem;
     .formulario input::placeholder {
       color: #bbb;
     }
+    .pagina-error{
+        height: 100vh;
+        text-align: center;
+    }
 
 
