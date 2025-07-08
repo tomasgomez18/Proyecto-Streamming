@@ -18,8 +18,8 @@ body {
 }
 
 .nav-logo {
-  width: 70px;
-  height: 100%;
+  width: 50px;
+  height: 40%;
 }
 .bg-custom {
   background-color:  var(--bg-body);
