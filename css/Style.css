@@ -231,9 +231,42 @@ margin-right: 1rem;
     .formulario input::placeholder {
       color: #bbb;
     }
-    .pagina-error{
-        height: 100vh;
-        text-align: center;
-    }
+  .img-error{
+    width: 300px;
+  }
+  
+
+
+.img-overlay-wrapper {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-overlay-wrapper img {
+  transition: transform 0.3s ease;
+}
+
+.img-overlay-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 3), transparent);
+  color: var(--color-textos);
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-overlay-wrapper:hover .img-overlay {
+  opacity: 1;
+}
+
 
 
