@@ -373,3 +373,6 @@ opacity:1;
   justify-content: center;
 }
 
+.bg-acordeon{
+  background-color: var(--bg-body);
+}
