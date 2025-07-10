@@ -379,3 +379,7 @@ margin-right: 1rem;
 
 
 
+.bg-acordeon{
+  background-color: var(--bg-body);
+}
+
