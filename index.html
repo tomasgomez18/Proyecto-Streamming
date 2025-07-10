@@ -16,56 +16,59 @@
     <title>CLAP + </title>
 </head>
     <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-custom py-2 fixed-top">
-            <div class="container-fluid d-flex justify-content-between align-items-center">
-                <a class="navbar-brand fw-bold text-white" href="./index.html">
-                    <img class="nav-logo" src="./Assets/img/Photoroom_20250704_122014 (1).png" alt="Logo" height="40" />
-                </a>
-    
-                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto ms-3">
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold" href="./Pages/categoríapelículas.html"><span>PELÍCULAS</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold" href="#"><span>SERIES</span></a>
-                        </li>
-                    </ul>
-    
-                    <div class="barra-busqueda me-3 mx-auto my-3">
-                        <div class="input-icono ">
-                            <input type="text" placeholder="Buscar series o películas" />
-                            <i class="fa fa-search"></i>
-                        </div>
-                    </div>
-    
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link ms-2 fw-bold btn btn-light" href="./Pages/login.html">
-                                <span>INGRESA</span>
-                            </a>
-                        </li>
-                        <li class="nav-item ms-2">
-                            <a class="nav-link btn btn-light fw-bold"
-                                href="./Pages/suscripcion.html "><span>SUSCRÍBETE</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<header>
+  <nav class="navbar navbar-expand-lg bg-glass fixed-top py-3">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="./index.html">
+        <img src="./Assets/img/Photoroom_20250704_122014 (1).png" alt="Logo" height="40" class="me-2" />
+        <span>CLAP</span>
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Contenido del navbar -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto ms-3">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="./Pages/categoríapelículas.html">Películas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#">Series</a>
+          </li>
+        </ul>
+
+        <!-- Buscador -->
+        <form class="d-flex mx-auto my-3 my-lg-0" role="search">
+          <div class="search-wrapper">
+            <input class="form-control search-input" type="search" placeholder="Buscar series o películas" />
+            <i class="fa fa-search search-icon"></i>
+          </div>
+        </form>
+
+        <!-- Botones -->
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item me-2">
+            <a class="btn btn-outline-light btn-sm fw-bold" href="./Pages/login.html">Ingresá</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary btn-sm fw-bold" href="./Pages/suscripcion.html">Suscribite</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
 
             <!-- HERO -->
     <section class="hero">
         <video class="hero-video d-none d-md-block" autoplay muted loop playsinline>
-            <source src="./Assets/img/episodio2reproduciendo.mp4" type="video/mp4" />
+            <source src="./Assets/img/4882461-uhd_4096_2160_25fps.mp4" type="video/mp4" />
         </video>
     
         <div class="hero-img d-block d-md-none"></div>
@@ -95,9 +98,9 @@
 
         <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
             <a href="./Pages/categoríapelículas.html" class="img-overlay-wrapper">
-                <img src="./Assets/img/episodio1.png" class="img-fluid rounded" alt="Película 1">
+                <img src="./Assets/img/portadapeliculas2.png" class="img-fluid rounded" alt="Película 1">
                 <div class="img-overlay">
-                    <h5>Fragmentos del Eclipse</h5>
+                    <h5>Algo que llamamos luz</h5>
                 </div>
             </a>
         </div>
@@ -105,9 +108,9 @@
 
         <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
             <a href="./Pages/categoríapelículas.html" class="img-overlay-wrapper">
-                <img src="./Assets/img/portadaelsolitario.png" class="img-fluid rounded" alt="Película 2">
+                <img src="./Assets/img/peliculaportada4.png" class="img-fluid rounded" alt="Película 2">
                 <div class="img-overlay">
-                    <h5>El Solitario</h5>
+                    <h5>Neblina azul</h5>
                 </div>
             </a>
         </div>
@@ -115,9 +118,9 @@
 
         <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
             <a href="./Pages/categoríapelículas.html" class="img-overlay-wrapper">
-                <img src="./Assets/img/episodio3-img.png" class="img-fluid rounded" alt="Película 3">
+                <img src="./Assets/img/peliculaportada1.png" class="img-fluid rounded" alt="Película 3">
                 <div class="img-overlay">
-                    <h5>Fragmentos del Eclipse</h5>
+                    <h5>Código Eva</h5>
                 </div>
             </a>
         </div>
@@ -125,9 +128,9 @@
 
         <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
             <a href="./Pages/categoríapelículas.html" class="img-overlay-wrapper">
-                <img src="./Assets/img/episodio4-img.png" class="img-fluid rounded" alt="Película 4">
+                <img src="./Assets/img/portadapeliculas5.png" class="img-fluid rounded" alt="Película 4">
                 <div class="img-overlay">
-                    <h5>Fragmentos del Eclipse</h5>
+                    <h5>Delta fantasma</h5>
                 </div>
             </a>
         </div>
@@ -135,9 +138,9 @@
 
         <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
             <a href="./Pages/categoríapelículas.html" class="img-overlay-wrapper">
-                <img src="./Assets/img/episodio5-img.png" class="img-fluid rounded" alt="Película 5">
+                <img src="./Assets/img/portadapeliculas6.png" class="img-fluid rounded" alt="Película 5">
                 <div class="img-overlay">
-                    <h5>Fragmentos del Eclipse</h5>
+                    <h5>Ruido blanco</h5>
                 </div>
             </a>
         </div>
@@ -145,9 +148,9 @@
 
         <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
             <a href="./Pages/categoríapelículas.html" class="img-overlay-wrapper">
-                <img src="./Assets/img/episodio2-img.png" class="img-fluid rounded" alt="Película 6">
+                <img src="./Assets/img/portadapelicula7.png" class="img-fluid rounded" alt="Película 6">
                 <div class="img-overlay">
-                    <h5>Fragmentos del Eclipse</h5>
+                    <h5>Latido silencioso</h5>
                 </div>
             </a>
         </div>
@@ -393,7 +396,7 @@ Si obtienes CLAP con tu paquete de TV, servicio de Internet o telefonía móvil,
                                     <img src="./Assets/img/episodio2-img.png" alt="Ep2" class="w-100 rounded" />
 
                                     <button type="button" class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal"
-                                        data-bs-target="#modalVideo2">
+                                        data-bs-target="#modalvideo2">
                                         <i class="bi bi-play-circle-fill fs-2 text-white"></i>
                                     </button>
                                 </div>
@@ -509,12 +512,12 @@ Si obtienes CLAP con tu paquete de TV, servicio de Internet o telefonía móvil,
                 </div>
             </div>
 
-                        <div class="modal fade" id="modalPelicula2" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
+                        <div class="modal fade" id="modalvideo2" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-dialog-centered">
                     <div class="modal-content bg-dark text-white">
                         <div class="modal-header border-0">
                             <h5 class="modal-title" id="modalVideo1Label">
-                                Reproduciendo: A la sobra del sol
+                                Reproduciendo: Zona Cero
                             </h5>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Cerrar"></button>
@@ -523,18 +526,10 @@ Si obtienes CLAP con tu paquete de TV, servicio de Internet o telefonía móvil,
             
                             <div class="ratio ratio-16x9">
                                 <video class="img-fluid w-100" autoplay muted loop playsinline>
-                                    <source src="../Assets/img/videoHero2.mp4" type="video/mp4" alt="Video serie" />
+                                    <source src="./Assets/img/episodio2reproduciendo.mp4" type="video/mp4" alt="Video serie" />
                                 </video>
             
                             </div>
-                            <p class="mt-2 text-center px-5 my-5">"A la Sombra del Sol” es una delicada metáfora visual sobre el
-                                contraste entre luz y emoción. En lo alto de una montaña, dos personas comparten un momento íntimo
-                                justo antes del ocaso. La película explora lo que queda oculto bajo la belleza del atardecer:
-                                recuerdos no dichos, decisiones suspendidas, y la posibilidad de un nuevo comienzo. Con silencios
-                                que hablan más que las palabras, esta historia se convierte en un reflejo de lo que buscamos… cuando
-                                todo se cubre de oro y sombra.
-            
-                            </p>
                         </div>
                     </div>
             
