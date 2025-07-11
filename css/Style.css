@@ -513,7 +513,7 @@ h1, h4 {
 
       .titulo-seccion-contacto {
       font-size: 2.5rem;
-      border-bottom: 2px solid #0dcaf0;
+      border-bottom: 2px solid var(--turquesa);
       padding-bottom: 0.5rem;
       margin-bottom: 2rem;
     }
@@ -526,13 +526,13 @@ h1, h4 {
     }
 
     .btn-enviar {
-      background-color: #0dcaf0;
+      background-color: var(--turquesa);
       border: none;
       transition: 0.3s;
     }
 
     .btn-enviar:hover {
-      background-color: #0dcaf0;
+      background-color: var(--turquesa);
       transform: scale(1.05);
     }
 
@@ -545,7 +545,7 @@ h1, h4 {
     }
 
     .contacto-info i {
-      color:  #0dcaf0;
+      color: var(--turquesa);
       margin-right: 10px;
     }
 
