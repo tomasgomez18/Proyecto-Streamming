@@ -32,25 +32,26 @@ body {
 
 .search-wrapper {
   position: relative;
-}
-
-.search-input {
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 30px;
-  border: none;
-  padding: 10px 40px 10px 15px;
-  color: white;
   width: 100%;
 }
 
+.search-input {
+  background-color: transparent !important;
+  border: 2px solid rgba(255, 255, 255, 0.855);
+  border-radius: 50px;
+  padding: 10px 40px 10px 15px;
+  color: #fff;
+  width: 100%;
+  outline: none;
+}
+
 .search-input::placeholder {
-  color: #ccc;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .search-icon {
   color: #ccc;
 }
-
 
 .btn-celular {
   width: 180px;
