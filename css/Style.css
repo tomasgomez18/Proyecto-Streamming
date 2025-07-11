@@ -513,6 +513,36 @@ h1, h4 {
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
 
+  .sobre-nosotros{
+  background-color: #141414
+}
+
+.foto-sobre-nosotros{
+  
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+.foto-sobre-nosotros:hover{
+  transform: translateY(-5px);
+
+}
+.categoria-foto {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    }
+    .contenedor-sobre-nosotros:hover {
+      filter: drop-shadow(8px 8px 4px  #000000 );
+    }
+    .titulo-seccion {
+      font-size: 2.5rem;
+      border-bottom: 1px solid #0dcaf0;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+}
+
 @media(max-width: 992px) {
   .ocultar-en-tablet {
     display: none !important;
