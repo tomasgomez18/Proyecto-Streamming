@@ -420,6 +420,41 @@ margin-right: 1rem;
   filter: invert(1);
 }
 
+.footer-custom {
+  background: linear-gradient(to right, #111, #1c1c1c);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--turquesa);
+  text-decoration: underline;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--turquesa);
+  transform: scale(1.5);
+}
+.logo-footer:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
 @media(max-width: 992px) {
   .ocultar-en-tablet {
     display: none !important;
