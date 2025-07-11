@@ -17,45 +17,42 @@
 </head>
     <body>
 <header>
-  <nav class="navbar navbar-expand-lg bg-glass fixed-top py-3">
+ <nav class="navbar navbar-expand-lg bg-glass fixed-top">
     <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="./index.html">
-        <img src="./Assets/img/Clap.png" alt="Logo" height="40" class="me-2" />
+
+      <a class="navbar-brand d-flex align-items-center text-white fw-bold ms-3" href="./index.html">
+        <img src="./Assets/img/Clap.png" alt="Logo" height="70" width="80" class="me-2" />
       </a>
 
-      <!-- Botón hamburguesa -->
-      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+      <button class="navbar-toggler text-white bg-gray rounded" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Contenido del navbar -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto ms-3">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+        <ul class="navbar-nav me-auto ms-3 text-center text-lg-start gap-3">
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="./Pages/categoríapelículas.html">Películas</a>
+            <a class="nav-link fw-bold " href="./Pages/categoríapelículas.html">PELÍCULAS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#">Series</a>
+            <a class="nav-link fw-bold" href="#">SERIES</a>
           </li>
         </ul>
 
-        <!-- Buscador -->
-        <form class="d-flex mx-auto my-3 my-lg-0" role="search">
-          <div class="search-wrapper">
+        <form class="d-flex justify-content-center w-100 my-3 my-lg-0" role="search">
+          <div class="search-wrapper position-relative">
             <input class="form-control search-input" type="search" placeholder="Buscar series o películas" />
-            <i class="fa fa-search search-icon"></i>
+            <i class="fa fa-search search-icon position-absolute top-50 end-0 translate-middle-y me-3"></i>
           </div>
         </form>
 
-        <!-- Botones -->
-        <ul class="navbar-nav ms-3">
-          <li class="nav-item me-2">
-            <a class="btn btn-outline-light btn-sm fw-bold" href="./Pages/login.html">Ingresá</a>
+        <ul class="navbar-nav ms-3 gap-3 text-center text-lg-end w-100 justify-content-center justify-content-lg-end">
+          <li class="nav-item me-2 ">
+            <a class="btn btn-outline-light btn-sm fw-bold btn-celular " href="./Pages/login.html">INGRESAR</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-primary btn-sm fw-bold" href="./Pages/suscripcion.html">Suscribite</a>
+            <a class="btn btn-suscripcion btn-sm fw-bold btn-celular" href="./Pages/suscripcion.html">SUSCRÍBETE</a>
           </li>
         </ul>
       </div>
