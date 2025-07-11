@@ -455,6 +455,55 @@ hr {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
+h1, h4 {
+      color: white;
+    }
+
+      .titulo-seccion-contacto {
+      font-size: 2.5rem;
+      border-bottom: 2px solid #0dcaf0;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-control,
+    .form-control:focus {
+      background-color: #222;
+      border-color: #444;
+      color: #fff;
+    }
+
+    .btn-enviar {
+      background-color: #0dcaf0;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .btn-enviar:hover {
+      background-color: #0dcaf0;
+      transform: scale(1.05);
+    }
+
+    .contacto-info {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .contacto-info i {
+      color:  #0dcaf0;
+      margin-right: 10px;
+    }
+
+    .formulario-contacto {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
 @media(max-width: 992px) {
   .ocultar-en-tablet {
     display: none !important;
