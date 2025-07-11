@@ -15,29 +15,36 @@
     <link rel="stylesheet" href="../css/Style.css">
     <title>CLAP +</title>
 </head>
-    <body>
-      <header>
-        <nav class="navbar navbar-expand-lg bg-custom py-2 sticky-top">
-          <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a class="navbar-brand fw-bold text-white" href="../index.html">
-              <img class="nav-logo" src="../Assets/img/Photoroom_20250704_122014 (1).png" alt="Logo" height="40" />
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav"> </div>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link ms-2 fw-bold btn btn-light" href="../Pages/login.html" data-bs-toggle="modal"
-                  data-bs-target="#loginModal">
-                  <span>INGRESA</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          </div>
-        </nav>
-      </header>
+    <body>  
+          <header>
+            <nav class="navbar navbar-expand-lg bg-glass  py-3 "data-aos="fade-down"data-aos-delay="100">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center ms-4" href="./index.html">
+                        <img src="../Assets/img/Clap.png" alt="Logo" height="70" width="80" class="me-2" />
+                    </a>
+                    <button class="navbar-toggler text-white bg-gray rounded" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <form class="d-flex justify-content-center w-100 my-3 my-lg-0 " role="search">
+
+                        </form>
+                        <ul class="navbar-nav ms-3 gap-3">
+                            <li class="nav-item">
+                                <a class="btn btn-outline-light btn-sm fw-bold btn-celular"
+                                    href="../Pages/login.html">INGRESAR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+<main>
       <section>
-        <div class="container">
-          <h2 class="text-center  my-5 text-white">Elegi tu plan
+        <div class="  container ">
+          <h2 class=" text-center  my-5  text-white">Elegi tu plan
             <hr>
           </h2>
           <div class="row gy-3">
@@ -108,5 +115,51 @@
           </div>
         </section>
       </section>
+</main> 
+
+      <footer class="footer-custom text-white pt-5 mt-5">
+            <div class="container">
+                <div class="row text-center text-md-start align-items-center">
+                    <div class="col-6 col-md-4 col-lg-4 mb-4 mb-lg-0">
+                        <a href="./index.html"
+                            class="text-decoration-none text-white d-flex align-items-center justify-content-center justify-content-md-start">
+                            <img src="../Assets/img/Clap.png" alt="Logo" height="100" class="me-5 logo-footer" />
+                        </a>
+                    </div>
+                    <div
+                        class="col-6 col-md-4 col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center justify-content-md-center align-items-lg-center gap-4">
+                        <a href="https://github.com/tomasgomez18/Proyecto-Streamming" target="_blank"
+                            class="text-white fs-4 social-icon"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="text-white fs-4 social-icon"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="text-white fs-4 social-icon"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" class="text-white fs-4 social-icon"><i
+                                class="bi bi-facebook"></i></a>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 d-flex flex-column align-items-center align-items-lg-end gap-2">
+                        <a href="../Pages/acercadenosotros.html" class="footer-link align-items-lg-start">Acerca de nosotros</a>
+                        <a href="../Pages/contacto.html" class="footer-link ">Contacto</a>
+                        <a href="../Pages/error404.html" class="footer-link">Términos y condiciones</a>
+                    </div>
+                </div>
+                <hr class="my-4 border-secondary">
+                <div class="text-center small text-white pb-3">
+                    &copy; CLAP 2025 Todos los derechos reservados.
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+        crossorigin="anonymous"></script>>  
     </body>
 </html>
