@@ -17,46 +17,55 @@ body {
     font-family: var(--fuentes);
 }
 
-.nav-logo {
-  width: 70px;
-  height: 100%;
-}
-.bg-custom {
-  background-color:  var(--bg-body);
-}
-span {
-  color: var(--color-textos)
-}
-span:hover {
-  color: var(--rojo);
-}
-.barra-busqueda {
-  padding: 20px;
-  display: flex;
- 
-}
-
-.input-icono {
-  position: relative;
-  width: 300px;
-  ;
-}
-
-.input-icono input {
-  width: 100%;
-  padding: 10px 40px 10px 15px;
+.navbar-toggler {
+  background-color: #6c757d; 
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
-
 }
 
-.input-icono .fa-search {
+.search-wrapper {
+  position: relative;
+}
+
+.search-input {
+  padding-right: 2.5rem;
+}
+
+.search-icon {
+  color: #aaa;
+}
+.btn-suscripcion{
+  background-color:  #24afce;
+  color: rgb(14, 14, 14);
+}
+
+.btn-suscripcion:hover {
+  background-color: #1a7a9d;
+  color: white;
+}
+.btn-celular {
+  width: 180px; 
+  text-align: center;
+  padding: 10px;
+}
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.5s ease;
+  padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
   position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--rojo);
+  bottom: 0;
+  left: 7px;
+  width: 0%;
+  height: 2.5px;
+  background-color: #00bcd4; 
+  transition: width 0.5s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 85%;
 }
 
 
