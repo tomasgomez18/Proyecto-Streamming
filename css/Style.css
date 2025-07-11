@@ -17,40 +17,64 @@ body {
     font-family: var(--fuentes);
 }
 
+.bg-glass {
+  background-color: rgba(0, 0, 0, 0.533);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.207);
+}
+
+
 .navbar-toggler {
-  background-color: #6c757d; 
+  background-color: #6c757d;
   border: none;
 }
+
 
 .search-wrapper {
   position: relative;
 }
 
 .search-input {
-  padding-right: 2.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 30px;
+  border: none;
+  padding: 10px 40px 10px 15px;
+  color: white;
+  width: 100%;
+}
+
+.search-input::placeholder {
+  color: #ccc;
 }
 
 .search-icon {
-  color: #aaa;
+  color: #ccc;
 }
-.btn-suscripcion{
-  background-color:  #24afce;
+
+
+.btn-celular {
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+}
+
+.btn-suscripcion {
+  background-color: var(--turquesa);
   color: rgb(14, 14, 14);
+  border: none;
 }
 
 .btn-suscripcion:hover {
   background-color: #1a7a9d;
   color: white;
 }
-.btn-celular {
-  width: 180px; 
-  text-align: center;
-  padding: 10px;
-}
+
+
 .navbar-nav .nav-link {
+  color: white;
   position: relative;
-  transition: color 0.5s ease;
   padding-bottom: 5px;
+  transition: all 0.3s ease;
 }
 
 .navbar-nav .nav-link::after {
@@ -60,12 +84,30 @@ body {
   left: 7px;
   width: 0%;
   height: 2.5px;
-  background-color: #00bcd4; 
+  background-color: #00bcd4;
   transition: width 0.5s ease;
 }
-
 .navbar-nav .nav-link:hover::after {
   width: 85%;
+}
+
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .search-wrapper {
+    width: 100%;
+    max-width: 400px;
+  }
+
+
 }
 
 
@@ -547,4 +589,5 @@ h1, h4 {
   .ocultar-en-tablet {
     display: none !important;
   }
+
 }
