@@ -17,46 +17,98 @@ body {
     font-family: var(--fuentes);
 }
 
-.nav-logo {
-  width: 70px;
-  height: 100%;
-}
-.bg-custom {
-  background-color:  var(--bg-body);
-}
-span {
-  color: var(--color-textos)
-}
-span:hover {
-  color: var(--rojo);
-}
-.barra-busqueda {
-  padding: 20px;
-  display: flex;
- 
+.bg-glass {
+  background-color: rgba(0, 0, 0, 0.533);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.207);
 }
 
-.input-icono {
-  position: relative;
-  width: 300px;
-  ;
-}
 
-.input-icono input {
-  width: 100%;
-  padding: 10px 40px 10px 15px;
+.navbar-toggler {
+  background-color: #6c757d;
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
-
 }
 
-.input-icono .fa-search {
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  background-color: transparent !important;
+  border: 2px solid rgba(255, 255, 255, 0.855);
+  border-radius: 50px;
+  padding: 10px 40px 10px 15px;
+  color: #fff;
+  width: 100%;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-icon {
+  color: #ccc;
+}
+
+.btn-celular {
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+}
+
+.btn-suscripcion {
+  background-color: var(--turquesa);
+  color: rgb(14, 14, 14);
+  border: none;
+}
+
+.btn-suscripcion:hover {
+  background-color: #1a7a9d;
+  color: white;
+}
+
+
+.navbar-nav .nav-link {
+  color: white;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
   position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--rojo);
+  bottom: 0;
+  left: 7px;
+  width: 0%;
+  height: 2.5px;
+  background-color: #00bcd4;
+  transition: width 0.5s ease;
+}
+.navbar-nav .nav-link:hover::after {
+  width: 85%;
+}
+
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .search-wrapper {
+    width: 100%;
+    max-width: 400px;
+  }
+
+
 }
 
 
@@ -236,6 +288,17 @@ margin-right: 1rem;
   }
   
 
+.img-overlay-wrapper img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.img-overlay-wrapper:hover img {
+  transform: scale(1.03);
+}
 
 .img-overlay-wrapper {
   position: relative;
@@ -244,28 +307,20 @@ margin-right: 1rem;
   border-radius: 10px;
 }
 
-.img-overlay-wrapper img {
-  transition: transform 0.3s ease;
-}
-
-.img-overlay-wrapper:hover img {
-  transform: scale(1.05);
-}
-
 .img-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 3), transparent);
-  color: var(--color-textos);
   padding: 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,2), transparent);
+  color: white;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .img-overlay-wrapper:hover .img-overlay {
-opacity:1;
+  opacity: 1;
 }
 
 /* CARDS DESTACADAS */
@@ -352,5 +407,188 @@ opacity:1;
     transition: all 0.3s ease;
     box-shadow: 0 0 20px rgba(5, 147, 69);
 }
+.icono-play-mobile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+.custom-card:hover .icono-play-mobile {
+  opacity: 1;
+}
+.icono-play-mobile .btn {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
+.accordion {
+  border: none;
+  background-color: transparent;
+}
+.accordion-item {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.accordion-button {
+  background-color: #222; 
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #444;
+  color: #fff;
+}
+
+.accordion-body {
+  background-color: var(--bg-body);
+  color: #ccc;
+  padding: 1rem 1.5rem;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.footer-custom {
+  background: linear-gradient(to right, #111, #1c1c1c);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--turquesa);
+  text-decoration: underline;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--turquesa);
+  transform: scale(1.5);
+}
+.logo-footer:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+h1, h4 {
+      color: white;
+    }
+
+      .titulo-seccion-contacto {
+      font-size: 2.5rem;
+      border-bottom: 2px solid var(--turquesa);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-control,
+    .form-control:focus {
+      background-color: #222;
+      border-color: #444;
+      color: #fff;
+    }
+
+    .btn-enviar {
+      background-color: var(--turquesa);
+      border: none;
+      transition: 0.3s;
+    }
+
+    .btn-enviar:hover {
+      background-color: var(--turquesa);
+      transform: scale(1.05);
+    }
+
+    .contacto-info {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .contacto-info i {
+      color: var(--turquesa);
+      margin-right: 10px;
+    }
+
+    .formulario-contacto {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+  .sobre-nosotros{
+  background-color: #141414
+}
+
+.foto-sobre-nosotros{
+  
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+.foto-sobre-nosotros:hover{
+  transform: translateY(-5px);
+
+}
+.categoria-foto {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    }
+    .contenedor-sobre-nosotros:hover {
+      filter: drop-shadow(8px 8px 4px  #000000 );
+    }
+    .titulo-seccion {
+      font-size: 2.5rem;
+      border-bottom: 1px solid #0dcaf0;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+}
+
+@media(max-width: 992px) {
+  .ocultar-en-tablet {
+    display: none !important;
+  }
+
+}
