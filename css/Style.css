@@ -401,6 +401,15 @@ margin-right: 1rem;
     background: url("../Assets/img/portadaHeroPeliculas.png") center/cover no-repeat;
     z-index: 0;
 }
+.hero-img-series {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../Assets/img/heroseries.png") center/cover no-repeat;
+    z-index: 0;
+}
 
 .lowcost:hover{
     transform: translateY(-5px);
@@ -584,6 +593,35 @@ h1, h4 {
       border-bottom: 1px solid #0dcaf0;
       padding-bottom: 0.5rem;
       margin-bottom: 2rem;
+}
+.pagination-oscura .page-link {
+  background-color: var(--bg-body);
+  color: var(--color-textos);
+  border: 1px solid #444;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination-oscura .page-link:hover {
+  background-color: var(--turquesa);
+  color: #000;
+  border-color: var(--turquesa);
+}
+
+.pagination-oscura .page-item.active .page-link {
+  background-color: var(--turquesa);
+  border-color: var(--turquesa);
+  color: #000;
+}
+.descripcion-textos {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+}
+.descripcion-textos2 {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7); 
+  font-family: 'Georgia', serif;  
+  line-height: 1.5;
 }
 
 
