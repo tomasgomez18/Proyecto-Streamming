@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-glass fixed-top py-3">
+    <nav class="navbar navbar-expand-lg bg-glass fixed-top py-3" data-aos="fade-down" data-aos-delay="100">
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center ms-4" href="../index.html">
           <img src="../Assets/img/Clap.png" alt="Logo" height="70" width="80" class="me-2" />
@@ -71,342 +71,107 @@
         </div>
     </section>
   
-    <section class="container my-5">
-      <h3 class="text-white mb-4">Destacados</h3>
-  
-      <div class="row g-4 " id="contenido-popular">
-  
-        <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-          <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-            <img src="../Assets/img/desdeAquiTodoCambia.jpg" class="card-img" alt="Pelicula" />
-            <div class="icono-play-mobile d-block d-sm-none">
-              <button class="btn btn-primary btn-sm rounded-circle" data-bs-toggle="modal"
-                data-bs-target="#modalPelicula1"><i class="bi bi-play-fill"></i></button>
-            </div>
-            <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
-              <h5 class="fw-bold text-center mb-3">Desde aqui, todo cambia</h5>
-              <div class="d-flex justify-content-around mb-2">
-                <button class="btn btn-primary btn-sm rounded-circle" data-bs-toggle="modal"
-                  data-bs-target="#modalPelicula1"><i class="bi bi-play-fill"></i></button>
-                <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
-                <button class="btn btn-dark btn-sm rounded-circle">
-                  <i class="fa-regular fa-square-plus"></i>
-                </button>
-              </div>
-              <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
-                <span class="badge bg-danger">18+</span>
-                <span>Pelicula</span>
-                <span class="badge bg-danger  ">FULL HD</span>
-                <span>2h 01min</span>
-              </div>
-              <p class="text-white-50 small mt-2 mb-0 text-center">Drama psicológico • Estados Unidos</p>
-            </div>
+<section class="container my-5">
+  <h3 class="text-white mb-4">Populares en tu país</h3>
+
+  <div class="row g-4 " id="contenido-popular">
+
+    <div class="col-md-6 col-lg-3 d-flex justify-content-center pagina pagina-1">
+      <div class="card bg-dark text-white custom-card">
+        <img src="./img/El-Juego-del-Calamar-portada.webp" class="card-img" alt="Serie" />
+        <div class="card-img-overlay d-flex flex-column justify-content-end p-3 gradient-overlay">
+          <h5 class="fw-bold text-center mb-3">Miles de detectives<br />y especialistas forenses</h5>
+          <div class="d-flex justify-content-around mb-2">
+            <button class="btn btn-primary btn-sm rounded-circle">
+              <i class="bi bi-play-fill"></i>
+            </button>
+            <button class="btn btn-light btn-sm rounded-circle">
+              <i class="bi bi-hand-thumbs-up"></i>
+            </button>
+            <button class="btn btn-light btn-sm rounded-circle" data-bs-toggle="modal" data-bs-target="#modalSerie2">
+              <i class="bi bi-chevron-down"></i>
+            </button>
           </div>
-        </div>
-  
-        <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-          <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-            <img src="../Assets/img/Callate.jpg" class="card-img" alt="pelicula" />
-            <div class="icono-play-mobile d-block d-sm-none">
-              <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-            </div>
-            <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
-              <h5 class="fw-bold text-center mb-3">El silencio de la verdad</h5>
-              <div class="d-flex justify-content-around mb-2">
-                <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-                <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
-                <button class="btn btn-dark btn-sm rounded-circle">
-                  <i class="fa-regular fa-square-plus"></i>
-                </button>
-              </div>
-              <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
-                <span class="badge bg-danger">18+</span>
-                <span>Pelicula</span>
-                <span class="badge bg-danger">FULL HD</span>
-                <span>1h 50min</span>
-              </div>
-              <p class="text-white-50 small mt-2 mb-0 text-center">Drama psicológico • Estados Unidos</p>
-            </div>
+          <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
+            <span class="badge bg-danger">16+</span>
+            <span>Miniserie</span>
+            <span class="badge bg-danger">HD</span>
           </div>
-        </div>
-  
-        <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-          <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-            <img src="../Assets/img/ElRastroDeLasLuciernagas.jpg" class="card-img" alt="pelicula" />
-            <div class="icono-play-mobile d-block d-sm-none">
-              <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-            </div>
-            <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
-              <h5 class="fw-bold text-center mb-3">El Rastro de las Luciérnagas</h5>
-              <div class="d-flex justify-content-around mb-2">
-                <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-                <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
-                <button class="btn btn-dark btn-sm rounded-circle">
-                  <i class="fa-regular fa-square-plus"></i>
-                </button>
-              </div>
-              <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
-                <span class="badge bg-danger">18+</span>
-                <span>Pelicula</span>
-                <span class="badge bg-danger">FULL HD</span>
-                <span>1h 50min</span>
-              </div>
-              <p class="text-white-50 small mt-2 mb-0 text-center">Drama psicológico • Fantasía</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-          <div class="card bg-dark text-white custom-card">
-            <img src="../Assets/img/AntenaRota.jpg" class="card-img" alt="pelicula" />
-            <div class="icono-play-mobile d-block d-sm-none">
-              <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-            </div>
-            <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
-              <h5 class="fw-bold text-center mb-3">Antena Rota</h5>
-              <div class="d-flex justify-content-around mb-2">
-                <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-                <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
-                <button class="btn btn-dark btn-sm rounded-circle">
-                  <i class="fa-regular fa-square-plus"></i>
-                </button>
-              </div>
-              <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
-                <span class="badge bg-danger">18+</span>
-                <span>Pelicula</span>
-                <span class="badge bg-danger">FULL HD</span>
-                <span>2h 08min</span>
-              </div>
-              <p class="text-white-50 small mt-2 mb-0 text-center">Ciencia ficción retro • Comedia</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-          <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-            <img src="../Assets/img/MateyTempestad.jpg" class="card-img" alt="pelicula" />
-            <div class="icono-play-mobile d-block d-sm-none">
-              <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-            </div>
-            <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
-              <h5 class="fw-bold text-center mb-3">Mate y Tempestad</h5>
-              <div class="d-flex justify-content-around mb-2">
-                <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-                <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
-                <button class="btn btn-dark btn-sm rounded-circle">
-                  <i class="fa-regular fa-square-plus"></i>
-                </button>
-              </div>
-              <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
-                <span class="badge bg-danger">18+</span>
-                <span>Pelicula</span>
-                <span class="badge bg-danger">FULL HD</span>
-                <span>2h 30min</span>
-              </div>
-              <p class="text-white-50 small mt-2 mb-0 text-center">Romance histórico • Aventura épica • Costumbrismo</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-          <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-            <img src="../Assets/img/CodigoEva.jpg" class="card-img" alt="pelicula" />
-            <div class="icono-play-mobile d-block d-sm-none">
-              <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-            </div>
-            <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
-              <h5 class="fw-bold text-center mb-3">Código Eva</h5>
-              <div class="d-flex justify-content-around mb-2">
-                <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-                <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
-                <button class="btn btn-dark btn-sm rounded-circle">
-                  <i class="fa-regular fa-square-plus"></i>
-                </button>
-              </div>
-              <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
-                <span class="badge bg-danger">18+</span>
-                <span>Pelicula</span>
-                <span class="badge bg-danger">FULL HD</span>
-                <span>1h 59min</span>
-              </div>
-              <p class="text-white-50 small mt-2 mb-0 text-center">Thriller tecnológico • Romance distópico</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-          <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-            <img src="../Assets/img/GalaxiaPerdidos.jpg" class="card-img" alt="pelicula" />
-            <div class="icono-play-mobile d-block d-sm-none">
-              <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-            </div>
-            <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
-              <h5 class="fw-bold text-center mb-3">La Galaxia de los Perdidos</h5>
-              <div class="d-flex justify-content-around mb-2">
-                <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-                <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
-                <button class="btn btn-dark btn-sm rounded-circle">
-                  <i class="fa-regular fa-square-plus"></i>
-                </button>
-              </div>
-              <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
-                <span class="badge bg-danger">18+</span>
-                <span>Pelicula</span>
-                <span class="badge bg-danger">FULL HD</span>
-                <span>1h 45min</span>
-              </div>
-              <p class="text-white-50 small mt-2 mb-0 text-center">Ciencia ficción espacial • Suspenso • Misterio</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-          <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-            <img src="../Assets/img/GritosYCanciones.jpg" class="card-img" alt="pelicula" />
-            <div class="icono-play-mobile d-block d-sm-none">
-              <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-            </div>
-            <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
-              <h5 class="fw-bold text-center mb-3">Entre Gritos y Canciones</h5>
-              <div class="d-flex justify-content-around mb-2">
-                <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-                <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
-                <button class="btn btn-dark btn-sm rounded-circle">
-                  <i class="fa-regular fa-square-plus"></i>
-                </button>
-              </div>
-              <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
-                <span class="badge bg-danger">18+</span>
-                <span>Pelicula</span>
-                <span class="badge bg-danger">FULL HD</span>
-                <span>1h 50min</span>
-              </div>
-              <p class="text-white-50 small mt-2 mb-0 text-center">Musical • Horror gótico • Drama familiar</p>
-            </div>
-          </div>
+          <p class="text-white-50 small mt-2 mb-0 text-center">De investigación • Serie documental • De Gran Bretaña • año 2025</p>
         </div>
       </div>
-  
-  
-      <nav class="d-flex justify-content-center mt-4">
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="#" onclick="cambiarPagina(1)">1</a></li>
-          <li class="page-item"><a class="page-link" href="#" onclick="cambiarPagina(2)">2</a></li>
-          <li class="page-item"><a class="page-link" href="#" onclick="cambiarPagina(3)">3</a></li>
-        </ul>
-      </nav>
-    </section>
-  </main>
-
-
-    <div class="modal fade" id="modalPelicula1" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content bg-dark text-white">
-          <div class="modal-header border-0">
-            <h5 class="modal-title" id="modalVideo1Label">
-              Reproduciendo: Desde aqui, todo cambia.
-            </h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-          </div>
-          <div class="modal-body p-0">
-    
-            <div class="ratio ratio-16x9">
-              <video class="img-fluid w-100" autoplay muted loop playsinline>
-                <source src="../Assets/img/Pelicula1.mp4" type="video/mp4" alt="Video serie" />
-              </video>
-    
-            </div>
-            <p class="mt-2 text-center px-5 my-5 d-block d-sm-none d-none d-sm-flex ">"Desde Aquí, Todo Cambia” es una
-              obra contemplativa que captura el
-              instante en que dos personas, en lo alto de una montaña, descubren que no solo el paisaje se transforma con la
-              luz del atardecer, sino también ellos. La película navega con sutileza entre el silencio y las emociones
-              latentes, mostrando que a veces, un cambio profundo comienza sin palabras—solo con una mirada compartida hacia
-              el horizonte.
-            </p>
-          </div>
-          <div class="row g-4 mt-3 container d-flex  ms-1 mb-5" id="contenido-popular">
-            <h3 class="text-white mb-4 text-center fs-4">Porque viste "desde aquí todo cambia"
-              <hr>
-            </h3>
-    
-            <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-              <div class="card bg-dark text-white custom-card">
-                <img src="../Assets/img/CenizasEnLaTarde.jpg" class="card-img" alt="Serie" />
-                <div class="card-img-overlay d-flex flex-column justify-content-end p-3 gradient-overlay">
-                  <h5 class="fw-bold text-center mb-3">Cenizas en la Tarde</h5>
-    
-    
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-              <div class="card bg-dark text-white custom-card">
-                <img src="../Assets/img/ErroresDelFuturo.jpg" class="card-img" alt="Serie" />
-                <div class="card-img-overlay d-flex flex-column justify-content-end p-3 gradient-overlay">
-                  <h5 class="fw-bold text-center mb-3">Errores del Futuro</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-              <div class="card bg-dark text-white custom-card">
-                <img src="../Assets/img/EspejosDeAbril.jpg" class="card-img" alt="Serie" />
-                <div class="card-img-overlay d-flex flex-column justify-content-end p-3 gradient-overlay">
-                  <h5 class="fw-bold text-center mb-3">El Espejo de Abril</h5>
-    
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-              <div class="card bg-dark text-white custom-card">
-                <img src="../Assets/img/Naufragos.jpg" class="card-img" alt="Serie" />
-                <div class="card-img-overlay d-flex flex-column justify-content-end p-3 gradient-overlay">
-                  <h5 class="fw-bold text-center mb-3">Náufragos del Sistema</h5>
-    
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4 d-none d-sm-flex ocultar-en-tablet">
-              <div class="card bg-dark text-white custom-card">
-                <img src="../Assets/img/CalleSinTiempo.jpg" class="card-img" alt="Serie" />
-                <div class="card-img-overlay d-flex flex-column justify-content-end p-3 gradient-overlay">
-                  <h5 class="fw-bold text-center mb-3"> La Calle Sin Tiempo</h5>
-    
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4 d-none d-sm-flex ocultar-en-tablet">
-              <div class="card bg-dark text-white custom-card">
-                <img src="../Assets/img/InstintoSubterraneo.jpg" class="card-img" alt="Serie" />
-                <div class="card-img-overlay d-flex flex-column justify-content-end p-3 gradient-overlay">
-                  <h5 class="fw-bold text-center mb-3">Instinto Subterráneo</h5>
-    
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4 d-none d-sm-flex ocultar-en-tablet">
-              <div class="card bg-dark text-white custom-card">
-                <img src="../Assets/img/pajarosEnLlama.jpg" class="card-img" alt="Serie" />
-                <div class="card-img-overlay d-flex flex-column justify-content-end p-3 gradient-overlay">
-                  <h5 class="fw-bold text-center mb-3">Pájaros en Llamas</h5>
-    
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4 d-none d-sm-flex ocultar-en-tablet">
-              <div class="card bg-dark text-white custom-card">
-                <img src="../Assets/img/CiudadOlvidada.jpg" class="card-img" alt="Serie" />
-                <div class="card-img-overlay d-flex flex-column justify-content-end p-3 gradient-overlay">
-                  <h5 class="fw-bold text-center mb-3"> La Ciudad Olvidada</h5>
-    
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-      </div>
-    
     </div>
+
+    <div class="col-md-6 col-lg-3 d-flex justify-content-center pagina pagina-1">
+      <div class="card bg-dark text-white custom-card">
+        <img src="./img/Dexter.jpg" class="card-img" alt="Serie" />
+        <div class="card-img-overlay d-flex flex-column justify-content-end p-3 gradient-overlay">
+          <h5 class="fw-bold text-center mb-3">Dexter Morgan<br />Un asesino muy metódico</h5>
+          <div class="d-flex justify-content-around mb-2">
+            <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
+            <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
+            <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-chevron-down"></i></button>
+          </div>
+          <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
+            <span class="badge bg-danger">18+</span>
+            <span>Comedia</span>
+            <span class="badge bg-danger">FULL HD</span>
+          </div>
+          <p class="text-white-50 small mt-2 mb-0 text-center">Drama psicológico • Estados Unidos • año 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 d-flex justify-content-center pagina pagina-1">
+      <div class="card bg-dark text-white custom-card">
+        <img src="./img/Dexter.jpg" class="card-img" alt="Serie" />
+        <div class="card-img-overlay d-flex flex-column justify-content-end p-3 gradient-overlay">
+          <h5 class="fw-bold text-center mb-3">Dexter Morgan<br />Un asesino muy metódico</h5>
+          <div class="d-flex justify-content-around mb-2">
+            <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
+            <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
+            <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-chevron-down"></i></button>
+          </div>
+          <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
+            <span class="badge bg-danger">18+</span>
+            <span>Thriller</span>
+            <span class="badge bg-danger">FULL HD</span>
+          </div>
+          <p class="text-white-50 small mt-2 mb-0 text-center">Drama psicológico • Estados Unidos • año 2024</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 d-flex justify-content-center pagina pagina-1">
+      <div class="card bg-dark text-white custom-card">
+        <img src="./img/Dexter.jpg" class="card-img" alt="Serie" />
+        <div class="card-img-overlay d-flex flex-column justify-content-end p-3 gradient-overlay">
+          <h5 class="fw-bold text-center mb-3">Dexter Morgan<br />Un asesino muy metódico</h5>
+          <div class="d-flex justify-content-around mb-2">
+            <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
+            <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
+            <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-chevron-down"></i></button>
+          </div>
+          <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
+            <span class="badge bg-danger">18+</span>
+            <span>Thriller</span>
+            <span class="badge bg-danger">FULL HD</span>
+          </div>
+          <p class="text-white-50 small mt-2 mb-0 text-center">Drama psicológico • Estados Unidos • año 2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="d-flex justify-content-center mt-4">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#" onclick="cambiarPagina(1)">1</a></li>
+      <li class="page-item"><a class="page-link" href="#" onclick="cambiarPagina(2)">2</a></li>
+      <li class="page-item"><a class="page-link" href="#" onclick="cambiarPagina(3)">3</a></li>
+    </ul>
+  </nav>
+</section>
+  </main>
 
 
     <div class="modal fade" id="modalSerie1" tabindex="-1" aria-labelledby="modalSerie1Label" aria-hidden="true">
@@ -568,6 +333,175 @@
                         <div class="ratio ratio-16x9">
                             <video class="img-fluid w-100" autoplay muted loop playsinline>
                                 <source src="../Assets/img/videoepisodio2.mp4" type="video/mp4" alt="Video serie" />
+                            </video>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <div class="modal fade" id="modalSerie2" tabindex="-1" aria-labelledby="modalSerie1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-body p-0">        
+                        <div class="position-relative">
+                            <video class="img-fluid w-100" autoplay muted loop playsinline>
+                                <source src="../Assets/img/videoserie2.mp4" type="video/mp4" alt="Video serie" />
+                            </video>        
+                            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="p-4">
+                            <h2>Celdas Cruzadas</h2>
+                            <p class="text-white mb-1">
+                                2025 • miniserie • <span class="badge bg-danger text-white">HD</span>
+                            </p>
+                            <p class="small">
+                                16+ • violencia, lenguaje inapropiado, drama
+                            </p>
+                            <p><strong>Mirá la temporada final ahora</strong></p>
+                            <p><strong>Temporada 2</strong> «Celdas Cruzadas»</p>
+                            <p>
+                                En una prisión de máxima seguridad, cinco reclusos aparentemente sin conexión comienzan a vivir situaciones extrañas que revelan que sus destinos están entrelazados. Bajo la mirada cómplice de un guardia que esconde más de un secreto, los internos deberán elegir entre confiar, traicionar o redimirse... antes de que sea demasiado tarde.
+                            </p>        
+                            <h4 class="mt-4">Episodios</h4>
+                            <div class="bg-dark text-white d-flex align-items-center mb-2 ">
+                                <div class="position-relative episodio-img">
+                                    <img src="../Assets/img/fotovideo1.png" alt="Ep1" class="w-100 rounded" />        
+                                    <button type="button"
+                                        class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle"
+                                        data-bs-toggle="modal" data-bs-target="#modalVideo2">
+                                        <i class="bi bi-play-circle-fill fs-2 text-white"></i>
+                                    </button>
+                                </div>
+                                <div class="ms-2">
+                                    <h6 class="mb-0 fw-bold">
+                                        1. El Silencio del Acero
+                                        <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>51 min</small>
+                                    </h6>
+                                    <p class="mb-0 small d-none d-sm-block">
+                                        Nick es trasladado a una prisión de máxima seguridad, donde lo vemos enfrentarse al encierro y a una tensión invisible con los guardias...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bg-dark text-white d-flex align-items-center mb-2">
+                                <div class="position-relative episodio-img">
+                                    <img src="../Assets/img/videoepisodio2.png" alt="Ep2" class="w-100 rounded" />        
+                                    <button type="button"
+                                        class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle"
+                                        data-bs-toggle="modal" data-bs-target="#modalvideo3">
+                                        <i class="bi bi-play-circle-fill fs-2 text-white"></i>
+                                    </button>
+                                </div>
+                                <div class="ms-2 ">
+                                    <h6 class="mb-0 fw-bold">
+                                        2. El Hombre del Cuaderno
+                                        <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>49 min</small>
+                                    </h6>
+                                    <p class="mb-0 small d-none d-sm-block">
+                                        Jason anota todo lo que ocurre en la cárcel. Su cuaderno contiene nombres, fechas y secretos...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bg-dark text-white d-flex align-items-center mb-2">
+                                <div class="position-relative episodio-img">
+                                    <img src="../Assets/img/videoepisodio3.png" alt="Ep3" class="w-100 rounded" />        
+                                    <button type="button"
+                                        class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle">
+                                        <i class="bi bi-play-circle-fill fs-2 text-white"></i>
+                                    </button>
+                                </div>
+                                <div class="ms-2">
+                                    <h6 class="mb-0 fw-bold">
+                                        3. La Reina del Ala B
+                                        <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>45 min</small>
+                                    </h6>
+                                    <p class="mb-0 small d-none d-sm-block">
+                                        Una reclusa peligrosa y astuta,lidera el pabellón de mujeres. Nadie entra ni sale sin su permiso...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bg-dark text-white d-flex align-items-center mb-2">
+                                <div class="position-relative episodio-img">
+                                    <img src="../Assets/img/videoepisodio4.png" alt="Ep4" class="w-100 rounded" />        
+                                    <button type="button"
+                                        class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle">
+                                        <i class="bi bi-play-circle-fill fs-2 text-white"></i>
+                                    </button>
+                                </div>
+                                <div class="ms-2">
+                                    <h6 class="mb-0 fw-bold">
+                                        4. Sonríe, Oficial
+                                        <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>53 min</small>
+                                    </h6>
+                                    <p class="mb-0 small d-none d-sm-block">
+                                        El guardia parece ser amable y comprensivo... pero algo en su sonrisa genera desconfianza...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bg-dark text-white d-flex align-items-center mb-2">
+                                <div class="position-relative episodio-img">
+                                    <img src="../Assets/img/videoepisodio5.png" alt="Ep5" class="w-100 rounded" />        
+                                    <button type="button"
+                                        class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle">
+                                        <i class="bi bi-play-circle-fill fs-2 text-white"></i>
+                                    </button>
+                                </div>
+                                <div class="ms-2">
+                                    <h6 class="mb-0 fw-bold">
+                                        5. Código de Sangre
+                                        <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>60 min</small>
+                                    </h6>
+                                    <p class="mb-0 small d-none d-sm-block">
+                                        Solo uno saldrá con vida y no necesariamente el más inocente...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="modal fade" id="modalVideo2" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="modalVideo1Label">
+                            Reproduciendo: El Silencio del Acero
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body p-0">        
+                        <div class="ratio ratio-16x9">
+                            <video class="img-fluid w-100" autoplay muted loop playsinline>
+                                <source src="../Assets/img/videoserie23.mp4" type="video/mp4" alt="Video serie" />
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modalvideo3" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="modalVideo1Label">
+                            Reproduciendo: El Hombre del Cuaderno
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body p-0">        
+                        <div class="ratio ratio-16x9">
+                            <video class="img-fluid w-100" autoplay muted loop playsinline>
+                                <source src="../Assets/img/videoserie24.mp4" type="video/mp4" alt="Video serie" />
                             </video>        
                         </div>
                     </div>
