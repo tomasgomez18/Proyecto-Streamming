@@ -349,12 +349,17 @@ margin-right: 1rem;
 .gradient-overlay {
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.75) 40%,
+    rgba(97, 96, 96, 0.186) 40%,
     rgba(0, 0, 0, 0.1) 100%
   );
 }
-
-
+.gradient-overlay:hover {
+  background: linear-gradient(
+    to top,
+    rgba(97, 96, 96, 0) 40%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
 .episodio {
   position: relative;
   overflow: hidden;
@@ -623,12 +628,69 @@ h1, h4 {
   font-family: 'Georgia', serif;  
   line-height: 1.5;
 }
+.bg-capitulos {
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
 
+.bg-capitulos:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: scale(1.01);
+}
+.top-10-badge {
+  top: 0px;
+  right: 10px;
+  background-color: var(--rojo);
+  color: var(--color-textos);
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 5px 8px;
+  border-radius: 5px;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgb(0, 0, 0);
+}
+.descripcion-subtitulo {
+  color: #999;
+  font-style: italic;
+  letter-spacing: 0.7px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  border-left: 3px solid crimson;
+  padding-left: 12px;
+}
+.descripcion-titulo {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #f1f1f1;
+  text-shadow: 2px 10px 8px rgb(0, 0, 0);
+}
+
+
+@media (max-width: 767px) {
+  .planes-streaming {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .planes-streaming .row {
+    margin-bottom: 0 !important;
+  }
+
+  section.container.my-5 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 
 
 @media(max-width: 992px) {
   .ocultar-en-tablet {
     display: none !important;
   }
+ 
 
 }

@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Plataforma streamming-video de código abierto y gratuito. Disfruta de películas, series y documentales">
     <meta name="keywords" content="streaming, video, open source, gratuito, plataforma, peliculas, series, documentales, anime, multimedia">
-    <meta name="author" content="Gomez, Tomas. Basso, Pablo, Romero, Juan Pablo. Jakubowicz, Luahana">
+    <meta name="author" content="Tomás Gómez, Pablo Basso, Juan Pablo Romero, Luahana Jakubowicz">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../Assets/img/Clap (1).png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="../Assets/img/fotoFavicon.png" type="image/x-icon">
@@ -68,9 +67,9 @@
             </video>
             <div class="hero-img-series d-block d-md-none"></div>
             <div class="hero-content">
-                <h1>Celdas Cruzadas</h1>
-                <p>Numero 1 en tendencias</p>
-                <div class="d-flex">
+                <h1 class="descripcion-titulo">Celdas Cruzadas</h1>
+                <p class="descripcion-subtitulo ms-3 fs-5 fw-bold">Top 10 en series más vistas</p>
+                <div class="d-flex ms-3 mt-5">
                     <a class="btn btn-light btn-play fw-bold" href="../Pages/login.html">
                         <i class="fas fa-play"></i> Reproducir
                     </a>
@@ -82,12 +81,16 @@
         </section>
 
         <section class="container my-5">
-            <h3 class="text-white mb-4">Populares en tu país</h3>
+            <h3 class="text-white mb-4">Series para maratonear</h3>
 
             <div class="row g-4 " id="contenido-popular">
 
                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
                     <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
+                            <div class="top-10-badge position-absolute text-center">
+                                <span class="d-block">TOP</span>
+                                <span class="d-block">10</span>
+                            </div>                         
                         <img src="../Assets/img/serie9.png" class="card-img" alt="Serie" />
                             <div class="icono-play-mobile d-block d-sm-none">
                                 <button class="btn btn-primary btn-sm rounded-circle" data-bs-toggle="modal" data-bs-target="#modalSerie2"><i
@@ -153,6 +156,10 @@
 
                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
                                     <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
+                                            <div class="top-10-badge position-absolute text-center">
+                                                <span class="d-block">TOP</span>
+                                                <span class="d-block">10</span>
+                                            </div>                                         
                                         <img src="../Assets/img/serie2.jpg" class="card-img" alt="Serie" />
                                         <div class="icono-play-mobile d-block d-sm-none">
                                             <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
@@ -213,6 +220,10 @@
 
                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
                     <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
+                            <div class="top-10-badge position-absolute text-center">
+                                <span class="d-block">TOP</span>
+                                <span class="d-block">10</span>
+                            </div>                        
                         <img src="../Assets/img/serie4.jpg" class="card-img" alt="Serie" />
                         <div class="icono-play-mobile d-block d-sm-none">
                             <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
@@ -243,13 +254,16 @@
 
                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
                     <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
+                            <div class="top-10-badge position-absolute text-center">
+                                <span class="d-block">TOP</span>
+                                <span class="d-block">10</span>
+                            </div> 
                         <img src="../Assets/img/serie5.jpg" class="card-img" alt="Serie" />
                         <div class="icono-play-mobile d-block d-sm-none">
                             <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
                         </div>
                         <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
-                            <h5 class="fw-bold text-center mb-3">Vestida para Mentir
-</h5>
+                            <h5 class="fw-bold text-center mb-3">Vestida para Mentir</h5>
                             <div class="d-flex justify-content-around mb-2">
                                 <button class="btn btn-primary btn-sm rounded-circle">
                                     <i class="bi bi-play-fill"></i>
@@ -304,6 +318,10 @@
 
                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
                     <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
+                            <div class="top-10-badge position-absolute text-center">
+                                <span class="d-block">TOP</span>
+                                <span class="d-block">10</span>
+                            </div>                         
                         <img src="../Assets/img/serie7.jpg" class="card-img" alt="Serie" />
                         <div class="icono-play-mobile d-block d-sm-none">
                             <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
@@ -381,7 +399,7 @@
                             o redimirse... antes de que sea demasiado tarde.
                         </p>
                         <h4 class="mt-4">Episodios</h4>
-                        <div class="bg-dark text-white d-flex align-items-center mb-2 ">
+                        <div class="text-white d-flex align-items-center mb-2 bg-capitulos ">
                             <div class="position-relative episodio-img">
                                 <img src="../Assets/img/fotovideo1.png" alt="Ep1" class="w-100 rounded" />
                                 <button type="button"
@@ -390,19 +408,20 @@
                                     <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
                                 </button>
                             </div>
-                            <div class="ms-2">
+                            <div class="ms-2 ">
                                 <h6 class="mb-0 fw-bold">
                                     1. El Silencio del Acero
-                                    <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>51
-                                        min</small>
                                 </h6>
-                                <p class="mb-0 small d-none d-sm-block descripcion-textos2">
-                                    Nick es trasladado a una prisión de máxima seguridad, donde lo vemos enfrentarse al
-                                    encierro y a una tensión invisible con los guardias...
+                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                    Nick es trasladado a una prisión de máxima seguridad, ahora debe enfrentarse al
+                                    encierro ...
                                 </p>
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                    <i class="fa-regular fa-clock me-2"></i>45 min
+                                </small>
                             </div>
                         </div>
-                        <div class="bg-dark text-white d-flex align-items-center mb-2">
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
                             <div class="position-relative episodio-img">
                                 <img src="../Assets/img/videoepisodio2.png" alt="Ep2" class="w-100 rounded" />
                                 <button type="button"
@@ -411,19 +430,20 @@
                                     <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
                                 </button>
                             </div>
-                            <div class="ms-2 ">
+                            <div class="ms-2">
                                 <h6 class="mb-0 fw-bold">
                                     2. El Hombre del Cuaderno
-                                    <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>49
-                                        min</small>
                                 </h6>
-                                <p class="mb-0 small d-none d-sm-block descripcion-textos2">
+                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
                                     Jason anota todo lo que ocurre en la cárcel. Su cuaderno contiene nombres, fechas y
                                     secretos...
                                 </p>
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                    <i class="fa-regular fa-clock me-2"></i>51 min
+                                </small>
                             </div>
                         </div>
-                        <div class="bg-dark text-white d-flex align-items-center mb-2">
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
                             <div class="position-relative episodio-img">
                                 <img src="../Assets/img/videoepisodio3.png" alt="Ep3" class="w-100 rounded" />
                                 <button type="button"
@@ -434,17 +454,16 @@
                             <div class="ms-2">
                                 <h6 class="mb-0 fw-bold">
                                     3. La Reina del Ala B
-                                    <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>45
-                                        min</small>
                                 </h6>
-                                <p class="mb-0 small d-none d-sm-block descripcion-textos2">
-                                    Una reclusa peligrosa y astuta,lidera el pabellón de mujeres. Nadie entra ni sale
-                                    sin su
-                                    permiso...
+                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                    Una reclusa peligrosa y astuta,lidera el pabellón de mujeres. Nadie entra ni sale...
                                 </p>
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                    <i class="fa-regular fa-clock me-2"></i>55 min
+                                </small>
                             </div>
                         </div>
-                        <div class="bg-dark text-white d-flex align-items-center mb-2">
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
                             <div class="position-relative episodio-img">
                                 <img src="../Assets/img/videoepisodio4.png" alt="Ep4" class="w-100 rounded" />
                                 <button type="button"
@@ -455,16 +474,17 @@
                             <div class="ms-2">
                                 <h6 class="mb-0 fw-bold">
                                     4. Sonríe, Oficial
-                                    <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>53
-                                        min</small>
                                 </h6>
-                                <p class="mb-0 small d-none d-sm-block descripcion-textos2">
-                                    El guardia parece ser amable y comprensivo... pero algo en su sonrisa genera
+                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                    El guardia parece ser amable y comprensivo, algo en su sonrisa genera
                                     desconfianza...
                                 </p>
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                    <i class="fa-regular fa-clock me-2"></i>49 min
+                                </small>
                             </div>
                         </div>
-                        <div class="bg-dark text-white d-flex align-items-center mb-2">
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
                             <div class="position-relative episodio-img">
                                 <img src="../Assets/img/videoepisodio5.png" alt="Ep5" class="w-100 rounded" />
                                 <button type="button"
@@ -475,12 +495,13 @@
                             <div class="ms-2">
                                 <h6 class="mb-0 fw-bold">
                                     5. Código de Sangre
-                                    <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>60
-                                        min</small>
                                 </h6>
-                                <p class="mb-0 small d-none d-sm-block descripcion-textos2">
+                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
                                     Solo uno saldrá con vida y no necesariamente el más inocente...
                                 </p>
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                    <i class="fa-regular fa-clock me-2"></i>50 min
+                                </small>
                             </div>
                         </div>
                     </div>
@@ -562,7 +583,7 @@
                             solo su relación, sino la estabilidad del reino.
                         </p>
                         <h4 class="mt-4">Episodios</h4>
-                        <div class="bg-dark text-white d-flex align-items-center mb-2 ">
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2 ">
                             <div class="position-relative episodio-img">
                                 <img src="../Assets/img/serie21.png" alt="Ep1" class="w-100 rounded" />
                                 <button type="button"
@@ -574,16 +595,16 @@
                             <div class="ms-2">
                                 <h6 class="mb-0 fw-bold">
                                     1. El baile de las Promesas
-                                    <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>50
-                                        min</small>
                                 </h6>
-                                <p class="mb-0 small d-none d-sm-block descripcion-textos2">
-                                    La llegada del Capitán Duvall causa sensación en el baile de invierno. Entre miradas
-                                    furtivas y valses, conoce a Élise...
+                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                    La llegada del Capitán Duvall causa sensación en el baile de invierno.
                                 </p>
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                    <i class="fa-regular fa-clock me-2"></i>55 min
+                                </small>
                             </div>
                         </div>
-                        <div class="bg-dark text-white d-flex align-items-center mb-2">
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
                             <div class="position-relative episodio-img">
                                 <img src="../Assets/img/serie25.png" alt="Ep2" class="w-100 rounded" />
                                 <button type="button"
@@ -592,20 +613,19 @@
                                     <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
                                 </button>
                             </div>
-                            <div class="ms-2 ">
+                            <div class="ms-2">
                                 <h6 class="mb-0 fw-bold">
                                     2. Banquete de apariencias
-                                    <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>49
-                                        min</small>
                                 </h6>
-                                <p class="mb-0 small d-none d-sm-block descripcion-textos2">
-                                    Mientras las copas chocan y las risas llenan el salón, se tejen planes ocultos.
-                                    Élise y
-                                    Duvall deben fingir...
+                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                    Mientras las copas chocan y las risas llenan el salón, se tejen planes ocultos...
                                 </p>
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                    <i class="fa-regular fa-clock me-2"></i>50 min
+                                </small>
                             </div>
                         </div>
-                        <div class="bg-dark text-white d-flex align-items-center mb-2">
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
                             <div class="position-relative episodio-img">
                                 <img src="../Assets/img/serie23.png" alt="Ep3" class="w-100 rounded" />
                                 <button type="button"
@@ -616,17 +636,16 @@
                             <div class="ms-2">
                                 <h6 class="mb-0 fw-bold">
                                     3. La noche de las verdades
-                                    <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>42
-                                        min</small>
                                 </h6>
-                                <p class="mb-0 small d-none d-sm-block descripcion-textos2">
-                                    Una cena privada, una carta descubierta y una traición inesperada. Élise confronta a
-                                    su
-                                    prometido...
+                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                    Una cena privada, una carta descubierta y una traición inesperada...
                                 </p>
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                    <i class="fa-regular fa-clock me-2"></i>46 min
+                                </small>
                             </div>
                         </div>
-                        <div class="bg-dark text-white d-flex align-items-center mb-2">
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
                             <div class="position-relative episodio-img">
                                 <img src="../Assets/img/serie24.png" alt="Ep4" class="w-100 rounded" />
                                 <button type="button"
@@ -637,15 +656,16 @@
                             <div class="ms-2">
                                 <h6 class="mb-0 fw-bold">
                                     4. La Soledad del Salón
-                                    <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>50
-                                        min</small>
                                 </h6>
-                                <p class="mb-0 small d-none d-sm-block descripcion-textos2">
-                                    Élise, aislada tras los rumores, deambula sola por el gran salón donde todo comenzó.
+                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                    Élise, aislada tras los rumores, deambula sola por el gran salón...
                                 </p>
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                    <i class="fa-regular fa-clock me-2"></i>42 min
+                                </small>
                             </div>
                         </div>
-                        <div class="bg-dark text-white d-flex align-items-center mb-2">
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
                             <div class="position-relative episodio-img">
                                 <img src="../Assets/img/serie22.png" alt="Ep5" class="w-100 rounded" />
                                 <button type="button"
@@ -656,13 +676,13 @@
                             <div class="ms-2">
                                 <h6 class="mb-0 fw-bold">
                                     5. Bajo la luz de las velas
-                                    <small class="text-white-50 ms-3"><i class="fa-regular fa-clock me-2"></i>43
-                                        min</small>
                                 </h6>
-                                <p class="mb-0 small d-none d-sm-block descripcion-textos2">
-                                    Los aliados se reúnen. Los enemigos también. Una última cena marca el destino de
-                                    todos.
+                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                    Los aliados se reúnen. Los enemigos también. Una última cena...
                                 </p>
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                    <i class="fa-regular fa-clock me-2"></i>42 min
+                                </small>
                             </div>
                         </div>
                     </div>
