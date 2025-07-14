@@ -703,6 +703,6 @@ h1, h4 {
 
 @media (max-width: 480px) {
   .descripcion-titulo {
-    font-size: 1rem !important;
+    font-size: 1rem;
   }
 }
