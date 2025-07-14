@@ -58,9 +58,9 @@
       </video>
       <div class="hero-img-pelicula d-block d-md-none"></div>
       <div class="hero-content">
-        <h1 class="fs-1">A la sombra del sol</h1>
-        <p>Lo más visto esta temporada</p>
-        <div class="d-flex">
+        <h1 class=" descripcion-titulo">A la sombra del sol</h1>
+        <p class="descripcion-subtitulo ms-3 fs-5 fw-bold">Lo más visto esta temporada</p>
+        <div class="d-flex ms-3 mt-5">
           <a class="btn btn-light btn-play fw-bold" data-bs-toggle="modal" data-bs-target="#modalPelicula2">
             <i class="fas fa-play"></i> Reproducir
           </a>
@@ -69,7 +69,7 @@
     </section>
   
     <section class="container my-5">
-      <h3 class="text-white mb-4">Destacados</h3>
+      <h3 class="text-white-50  fw-light mb-4">Destacados</h3>
   
       <div class="row g-4 " id="contenido-popular">
   
@@ -82,6 +82,10 @@
             </div>
             <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
               <h5 class="fw-bold text-center mb-3">Desde aqui, todo cambia</h5>
+              <div class="top-10-badge position-absolute text-center">
+                                <span class="d-block">TOP</span>
+                                <span class="d-block">10</span>
+                            </div>
               <div class="d-flex justify-content-around mb-2">
                 <button class="btn btn-primary btn-sm rounded-circle" data-bs-toggle="modal"
                   data-bs-target="#modalPelicula1"><i class="bi bi-play-fill"></i></button>
@@ -135,6 +139,10 @@
             </div>
             <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
               <h5 class="fw-bold text-center mb-3">El Rastro de las Luciérnagas</h5>
+              <div class="top-10-badge position-absolute text-center">
+                                <span class="d-block">TOP</span>
+                                <span class="d-block">10</span>
+                            </div>
               <div class="d-flex justify-content-around mb-2">
                 <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
                 <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
@@ -161,6 +169,10 @@
             </div>
             <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
               <h5 class="fw-bold text-center mb-3">Antena Rota</h5>
+              <div class="top-10-badge position-absolute text-center">
+                                <span class="d-block">TOP</span>
+                                <span class="d-block">10</span>
+                            </div>
               <div class="d-flex justify-content-around mb-2">
                 <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
                 <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
@@ -239,6 +251,10 @@
             </div>
             <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
               <h5 class="fw-bold text-center mb-3">La Galaxia de los Perdidos</h5>
+              <div class="top-10-badge position-absolute text-center">
+                                <span class="d-block">TOP</span>
+                                <span class="d-block">10</span>
+                            </div>
               <div class="d-flex justify-content-around mb-2">
                 <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
                 <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
@@ -337,8 +353,8 @@
     <div class="modal fade" id="modalPelicula1" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content bg-dark text-white">
-          <div class="modal-header border-0">
-            <h5 class="modal-title" id="modalVideo1Label">
+          <div class="modal-header border-0 ">
+            <h5 class="modal-title  descripcion-textos2" id="modalVideo1Label">
               Reproduciendo: Desde aqui, todo cambia.
             </h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
@@ -359,8 +375,8 @@
               el horizonte.
             </p>
           </div>
-          <div class="row g-4 mt-3 container d-flex  ms-1 mb-5" id="contenido-popular">
-            <h3 class="text-white mb-4 text-center fs-4">Porque viste "desde aquí todo cambia"
+          <div class="row g-4 mt-3 container d-flex  ms-1 mb-5 " id="contenido-popular">
+            <h3 class="text-white mb-4 text-center fs-4 text-white-50 fw-light">Porque viste "desde aquí todo cambia"
               <hr>
             </h3>
     
@@ -420,32 +436,35 @@
     </div>
 
 
-               <div class="modal fade" id="modalPelicula2" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
+              <div class="modal fade" id="modalPelicula2" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-dialog-centered">
-                    <div class="modal-content bg-dark text-white">
-                        <div class="modal-header border-0">
-                            <h5 class="modal-title" id="modalVideo1Label">
-                                Reproduciendo: A la sobra del sol
-                            </h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Cerrar"></button>
-                        </div>
-                        <div class="modal-body p-0">
-                            
-                            <div class="ratio ratio-16x9">
-                                <video class="img-fluid w-100" autoplay muted loop playsinline>
-                                <source src="../Assets/img/videoHero2.mp4" type="video/mp4" alt="Video serie" />
-                            </video>
-                      
-                            </div>
-                            <p class="mt-2 text-center px-5 my-5">"A la Sombra del Sol” es una delicada metáfora visual sobre el contraste entre luz y emoción. En lo alto de una montaña, dos personas comparten un momento íntimo justo antes del ocaso. La película explora lo que queda oculto bajo la belleza del atardecer: recuerdos no dichos, decisiones suspendidas, y la posibilidad de un nuevo comienzo. Con silencios que hablan más que las palabras, esta historia se convierte en un reflejo de lo que buscamos… cuando todo se cubre de oro y sombra.
-
-</p>
-                        </div>
+                  <div class="modal-content bg-dark text-white">
+                    <div class="modal-header border-0">
+                      <h5 class="modal-title descripcion-textos2" id="modalVideo1Label">
+                        Reproduciendo: A la sobra del sol
+                      </h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
-                    
+                    <div class="modal-body p-0">
+              
+                      <div class="ratio ratio-16x9">
+                        <video class="img-fluid w-100" autoplay muted loop playsinline>
+                          <source src="../Assets/img/videoHero2.mp4" type="video/mp4" alt="Video serie" />
+                        </video>
+              
+                      </div>
+                      <p class="mt-2 text-center descripcion-textos px-5 my-5">"A la Sombra del Sol” es una delicada metáfora visual
+                        sobre el contraste entre luz y emoción. En lo alto de una montaña, dos personas comparten un momento íntimo
+                        justo antes del ocaso. La película explora lo que queda oculto bajo la belleza del atardecer: recuerdos no
+                        dichos, decisiones suspendidas, y la posibilidad de un nuevo comienzo. Con silencios que hablan más que las
+                        palabras, esta historia se convierte en un reflejo de lo que buscamos… cuando todo se cubre de oro y sombra.
+              
+                      </p>
+                    </div>
+                  </div>
+              
                 </div>
-            </div>
+              </div>
         </footer>
 
        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
