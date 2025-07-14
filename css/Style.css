@@ -608,14 +608,14 @@ h1, h4 {
 
 .pagination-oscura .page-link:hover {
   background-color: var(--turquesa);
-  color: #000;
+  color: var(--bg-body);
   border-color: var(--turquesa);
 }
 
 .pagination-oscura .page-item.active .page-link {
   background-color: var(--turquesa);
   border-color: var(--turquesa);
-  color: #000;
+  color: var(--bg-body);
 }
 .descripcion-textos {
   font-family: 'Playfair Display', serif;
@@ -663,28 +663,22 @@ h1, h4 {
   color: #f1f1f1;
   text-shadow: 2px 10px 8px rgb(0, 0, 0);
 }
-
-
-@media (max-width: 767px) {
-  .planes-streaming {
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
-  }
-
-  .planes-streaming .row {
-    margin-bottom: 0 !important;
-  }
-
-  section.container.my-5 {
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
-  }
-
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+.volver-inicio {
+  margin-top: -130px;
+  margin-left: 650px;
 }
+.volver-inicio .btn {
+  color: #7d7c7c; 
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.volver-inicio .btn:hover {
+  color: #fff;
+}
+
+
+
 
 
 @media(max-width: 992px) {
