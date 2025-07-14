@@ -661,13 +661,15 @@ h1, h4 {
 }
 .descripcion-titulo {
   font-style: italic;
-  font-size: 1.05rem;
+  font-size: 4rem;
   color: #f1f1f1;
   text-shadow: 2px 10px 8px rgb(0, 0, 0);
 }
 .volver-inicio {
   text-align: start;
 }
+
+
 
 .volver-inicio .btn {
   color: rgba(158, 157, 157, 0.6);
@@ -690,4 +692,17 @@ h1, h4 {
   }
  
 
+}
+
+
+@media (max-width: 768px) {
+  .descripcion-titulo {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .descripcion-titulo {
+    font-size: 1rem !important;
+  }
 }
