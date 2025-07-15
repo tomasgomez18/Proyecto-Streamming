@@ -681,6 +681,14 @@ h1, h4 {
 .volver-inicio .btn:hover {
   color: white;
 }
+.dropdown-item{
+  color: #908888;
+}
+
+.dropdown-item:hover{
+  background-color: var(--turquesa);
+  color: #fff;
+}
 
 
 
