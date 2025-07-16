@@ -594,6 +594,13 @@ h1, h4 {
     object-fit: cover;
   border-radius: 10px;
     }
+    .foto-avatar{
+       height: 270px;
+    width: 80%;
+    object-fit: cover;
+  border-radius: 10px;
+    }
+    
     .foto-sobre-nosotros:hover {
       filter: drop-shadow(8px 8px 4px  #000000 );
         transform: translateY(-5px);
@@ -620,14 +627,12 @@ h1, h4 {
   color: var(--bg-body);
 }
 .descripcion-textos {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
+  font-family: 'Courier New', monospace; 
   color: rgba(255, 255, 255, 0.7);
 }
 .descripcion-textos2 {
-  font-style: italic;
   color: rgba(255, 255, 255, 0.7); 
-  font-family: 'Georgia', serif;  
+  font-family: 'Courier New', monospace; 
   line-height: 1.5;
 }
 .bg-capitulos {
@@ -722,5 +727,8 @@ h1, h4 {
   }
   .titulos-secciones{
     font-size: 1rem !important;
+  }
+  .titulo-capitulos{
+    font-size: 13px;
   }
 }
