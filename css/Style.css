@@ -734,6 +734,9 @@ h1, h4 {
   .titulo-capitulos{
     font-size: 11px !important;
   }
+  .contenido-acercadenosotros{
+    font-size: 13px !important;
+  }
 .titulo-botones {
   display: flex;
   align-items: center;
