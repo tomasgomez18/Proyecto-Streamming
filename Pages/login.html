@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plataforma streamming-video de código abierto y gratuito. Disfruta de películas, series, documentales y anime sin costo alguno.">
-    <meta name="keywords" content="streaming, video, open source, gratuito, plataforma, peliculas, series, documentales, anime, contenido multimedia">
+    <meta name="description" content="Plataforma streaming-video de código abierto. Disfruta de películas, series.">
+    <meta name="keywords" content="streaming, video, open source, plataforma, peliculas, series, documentales, contenido multimedia">
     <meta name="author" content="Tomás Gómez, Pablo Basso, Juan Pablo Romero, Luahana Jakubowicz">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -16,32 +16,34 @@
     <title>CLAP</title>
 </head>
     <main>
-        <section class="login">
-            <div class="login-container">
+        <section class="login" data-aos="flip-up">
+            <div class="login-container" >
                 <form class="form-login pb-3">
                     <h2 class="text-center mb-4">Iniciar sesión</h2>
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="usuario@gmail.com"  required minlength="15"
-                            maxlength="20">
+                        <input type="email" class="form-control" id="email" placeholder="usuario@gmail.com" required
+                            minlength="15" maxlength="20">
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="password" placeholder="••••••••"  required minlength="5"
-                            maxlength="20">
+                        <input type="password" class="form-control" id="password" placeholder="••••••••" required
+                            minlength="5" maxlength="20">
                     </div>
                     <div class="form-check mb-3">
                         <input class="form-check-input" type="checkbox" id="recordarme">
                         <label class="form-check-label" for="recordarme">Recordarme</label>
-                    </div>  
+                    </div>
                     <div class="col-12 d-grid">
-                        <button type="submit" formaction="../Pages/error404.html" class="btn btn-login btn-md">Iniciar sesión</button>
+                        <button type="submit" formaction="../Pages/error404.html" class="btn btn-login btn-md">Iniciar
+                            sesión</button>
                     </div>
                     <div class="text-center mt-3 fs-6">
                         <a href="../Pages/error404.html">¿Olvidaste tu contraseña?</a>
                     </div>
                     <div class="col-12 d-grid">
-                        <button type="submit" formaction="../Pages/error404.html" class="btn btn-outline-info btn-sm mt-2 p-2">Crear cuenta</button>
+                        <button type="submit" formaction="../Pages/error404.html"
+                            class="btn btn-outline-info btn-sm mt-2 p-2">Crear cuenta</button>
                     </div>
                     <div class="volver-inicio text-light mt-2 mb-0">
                         <a href="../index.html" class="btn btn-md">
@@ -52,8 +54,8 @@
             </div>
         </section>
     </main>
-
-
+    
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -64,4 +66,5 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
     </body>
-</html>
+    
+    </html>
