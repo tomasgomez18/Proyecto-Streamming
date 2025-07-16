@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plataforma streamming-video de código abierto y gratuito. Disfruta de películas, series, documentales y anime sin costo alguno.">
-    <meta name="keywords" content="streaming, video, open source, gratuito, plataforma, peliculas, series, documentales, anime, contenido multimedia">
+    <meta name="description" content="Plataforma streaming-video de código abierto. Disfruta de películas, series.">
+    <meta name="keywords" content="streaming, video, open source, plataforma, peliculas, series, documentales, contenido multimedia">
     <meta name="author" content="Tomás Gómez, Pablo Basso, Juan Pablo Romero, Luahana Jakubowicz">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -57,7 +57,7 @@
             </div>
         </nav>
     </header>
-    
+
     <main>
         <section class="hero">
             <video class="hero-video d-none d-md-block" autoplay muted loop playsinline>
@@ -68,23 +68,24 @@
                 <h1 class="descripcion-titulo">Fragmentos del Eclipse</h1>
                 <p class="descripcion-subtitulo ms-3 fs-5 fw-bold">Descubrí la historia que todos están mirando.</p>
                 <div class="d-flex ms-3 mt-5">
-                    <a class="btn btn-light btn-play fw-bold" href="./Pages/login.html">
+                    <a class="btn btn-light btn-play fw-bold titulo-botones" href="./Pages/login.html">
                         <i class="fas fa-play"></i> Reproducir
                     </a>
-                    <a class="btn btn-secondary btn-info titulos-secciones" href="#" data-bs-toggle="modal" data-bs-target="#modalSerie1">
-                        <i class="fas fa-info-circle"></i> Más información
+                    <a class="btn btn-secondary btn-info titulo-botones" href="#" data-bs-toggle="modal"
+                        data-bs-target="#modalSerie1">
+                        <i class="fas fa-info-circle "></i> Más información
                     </a>
                 </div>
             </div>
         </section>
-    
+
         <section class="container mt-5">
             <h3 class="text-white-50  fw-light mb-4 titulos-secciones">Tus películas favoritas</h3>
-    
+
             <div class="grid-masonry row" data-masonry='{"percentPosition": true }'>
                 <div class="grid-sizer col-12 col-sm-6 col-lg-4"></div>
                 <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="./Pages/categoríapelículas.html" class="img-overlay-wrapper">
+                    <a class="img-overlay-wrapper">
                         <img src="./Assets/img/portadapeliculas2.png" class="img-fluid rounded" alt="Película 1">
                         <div class="img-overlay">
                             <h5>Algo que llamamos luz</h5>
@@ -92,7 +93,7 @@
                     </a>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="./Pages/categoríapelículas.html" class="img-overlay-wrapper">
+                    <a class="img-overlay-wrapper">
                         <img src="./Assets/img/peliculaportada4.png" class="img-fluid rounded" alt="Película 2">
                         <div class="top-10-badge position-absolute text-center">
                             <span class="d-block ">TOP</span>
@@ -104,7 +105,7 @@
                     </a>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="./Pages/categoríapelículas.html" class="img-overlay-wrapper">
+                    <a class="img-overlay-wrapper">
                         <img src="./Assets/img/peliculaportada1.png" class="img-fluid rounded" alt="Película 3">
                         <div class="top-10-badge position-absolute text-center">
                             <span class="d-block ">TOP</span>
@@ -116,7 +117,7 @@
                     </a>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="./Pages/categoríapelículas.html" class="img-overlay-wrapper">
+                    <a class="img-overlay-wrapper">
                         <img src="./Assets/img/portadapeliculas5.png" class="img-fluid rounded" alt="Película 4">
                         <div class="top-10-badge position-absolute text-center">
                             <span class="d-block ">TOP</span>
@@ -128,7 +129,7 @@
                     </a>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="./Pages/categoríapelículas.html" class="img-overlay-wrapper">
+                    <a class="img-overlay-wrapper">
                         <img src="./Assets/img/portadapeliculas6.png" class="img-fluid rounded" alt="Película 5">
                         <div class="img-overlay">
                             <h5>Ruido blanco</h5>
@@ -136,7 +137,7 @@
                     </a>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="./Pages/categoríapelículas.html" class="img-overlay-wrapper">
+                    <a class="img-overlay-wrapper">
                         <img src="./Assets/img/portadapelicula7.png" class="img-fluid rounded" alt="Película 6">
                         <div class="img-overlay">
                             <h5>Latido silencioso</h5>
@@ -145,14 +146,14 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="container mt-3 mt-md-5 mb-3 mb-md-5">
             <h3 class="text-white-50  fw-light mb-4 titulos-secciones">Series de las que no podes parar de hablar</h3>
-    
+
             <div class="grid-masonry row" data-masonry='{"percentPosition": true }'>
                 <div class="grid-sizer col-12 col-sm-6 col-lg-4"></div>
                 <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="./Pages/categoríaseries.html" class="img-overlay-wrapper">
+                    <a class="img-overlay-wrapper">
                         <img src="./Assets/img/episodio1.png" class="img-fluid rounded" alt="serie 1">
                         <div class="top-10-badge position-absolute text-center">
                             <span class="d-block ">TOP</span>
@@ -164,7 +165,7 @@
                     </a>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="./Pages/categoríaseries.html" class="img-overlay-wrapper">
+                    <a class="img-overlay-wrapper">
                         <img src="./Assets/img/portadaelsolitario.png" class="img-fluid rounded" alt="serie 2">
                         <div class="top-10-badge position-absolute text-center">
                             <span class="d-block ">TOP</span>
@@ -176,7 +177,7 @@
                     </a>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="./Pages/categoríaseries.html" class="img-overlay-wrapper">
+                    <a class="img-overlay-wrapper">
                         <img src="./Assets/img/CadenaFantasma.jpg" class="img-fluid rounded" alt="serie 3">
                         <div class="img-overlay">
                             <h5>Cadena Fantasma</h5>
@@ -184,7 +185,7 @@
                     </a>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="./Pages/categoríaseries.html" class="img-overlay-wrapper">
+                    <a class="img-overlay-wrapper">
                         <img src="./Assets/img/LosOjosDelGeneral.jpg" class="img-fluid rounded" alt="serie 4">
                         <div class="top-10-badge position-absolute text-center">
                             <span class="d-block ">TOP</span>
@@ -196,7 +197,7 @@
                     </a>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="./Pages/categoríaseries.html" class="img-overlay-wrapper">
+                    <a class="img-overlay-wrapper">
                         <img src="./Assets/img/ElUltimoComando.jpg" class="img-fluid rounded" alt="serie 5">
                         <div class="img-overlay">
                             <h5>El Último Comando</h5>
@@ -204,7 +205,7 @@
                     </a>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                    <a href="./Pages/categoríaseries.html" class="img-overlay-wrapper">
+                    <a class="img-overlay-wrapper">
                         <img src="./Assets/img/PactoDeRuido.jpg" class="img-fluid rounded" alt="serie 6">
                         <div class="top-10-badge position-absolute text-center">
                             <span class="d-block ">TOP</span>
@@ -217,7 +218,7 @@
                 </div>
             </div>
         </section>
-    
+
         <Section class=" mt-3 mb-3">
             <div class="container mt-3 mt-md-5 mb-3 mb-md-5">
                 <h2 class="text-center text-white-50  fw-light fs-1 d-none d-md-block">Elegí tu plan
@@ -233,7 +234,8 @@
                                 <li class="text-secondary">Resolución HD</li>
                                 <li class="text-secondary">Contenido limitado</li>
                             </ul>
-                            <a class="btn  btn-outline-success w-100 mt-auto" href="./Pages/error404.html">Seleccionar</a>
+                            <a class="btn  btn-outline-success w-100 mt-auto"
+                                href="./Pages/error404.html">Seleccionar</a>
                         </div>
                     </div>
                     <div class=" col-md-4">
@@ -245,7 +247,8 @@
                                 <li class="text-secondary">Resolución FULL HD</li>
                                 <li class="text-secondary">Contenido ilimitado</li>
                             </ul>
-                            <a class="btn btn-outline-warning w-100 mt-auto" href="./Pages/error404.html">Seleccionar</a>
+                            <a class="btn btn-outline-warning w-100 mt-auto"
+                                href="./Pages/error404.html">Seleccionar</a>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -267,341 +270,343 @@
                 </div>
             </div>
         </Section>
-    
+
         <section class="container mt-2">
             <h3 class="mb-2 mt-5 text-center text-white-50 fw-light fs-1 titulos-secciones ">Preguntas frecuentes
                 <hr>
             </h3>
             <hr>
-                <div class="accordion" id="accordionPanelsStayOpenExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                                aria-controls="panelsStayOpen-collapseOne">
-                                <p class="text-white fw-bold fs-5  titulos-secciones">¿Que incluye CLAP?</p>
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                            <div class="accordion-body">
-                                <p class="text-white  titulos-secciones"><strong>Beneficios de la suscripción a CLAP :</strong>
-                                <ul class="text-white">
-                                    <li>Estrenos de películas, series originales y clásicos de CLAP.</li>
-                                    <li>Hasta 8 pantallas a la vez con CLAP Premium; y hasta 2 con CLAP Estándar</li>
-                                    <li>Descarga de títulos, creación de perfiles y control parental para personalizar
-                                        la
-                                        experiencia por edad según tu plan</li>
-                                    <li>Los torneos más importantes del mundo y programas</li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item ">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseTwo">
-                                <p class="text-white fs-5 titulos-secciones">¿Cómo puedo pagar?</p>
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                            <div class=" accordion-body">
-                                <p class="text-white">Podrás pagar con tarjeta de crédito o débito, Mercado Pago o a
-                                    través
-                                    de
-                                    terceros como Mercado Libre y proveedores locales de TV, telefonía e internet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                <p class="text-white fs-5 titulos-secciones">Donde ver CLAP</p>
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                            <div class="accordion-body">
-                                <p class="text-white">La aplicación de CLAP está disponible en tu dispositivo móvil,
-                                    navegador
-                                    web, consola de videojuegos, decodificador y Smart TV. Podrás ver la lista completa
-                                    de
-                                    dispositivos compatibles en el Centro de ayuda</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseFour">
-                                <p class="text-white fs-5 titulos-secciones">¿Cómo puedo registrarme?</p>
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-                            <div class="accordion-body">
-                                <p class="text-white">CLAP está disponible en CLAP.com y a través de los proveedores de
-                                    CLAP
-                                    en
-                                    la región.
-                                    Si obtienes CLAP con tu paquete de TV, servicio de Internet o telefonía móvil,
-                                    podrás
-                                    tener
-                                    acceso a CLAP VIP sin costo adicional. Puedes contactar a tu operador local para
-                                    obtener
-                                    más
-                                    detalles.</p>
-                            </div>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            <p class="text-white fw-bold fs-5  titulos-secciones2">¿Que incluye CLAP?</p>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p class="text-white  titulos-secciones2"><strong>Beneficios de la suscripción a CLAP
+                                    :</strong>
+                            <ul class="text-white titulos-secciones2">
+                                <li>Estrenos de películas, series originales y clásicos de CLAP.</li>
+                                <li>Hasta 8 pantallas a la vez con CLAP Premium; y hasta 2 con CLAP Estándar</li>
+                                <li>Descarga de títulos, creación de perfiles y control parental para personalizar
+                                    la
+                                    experiencia por edad según tu plan</li>
+                                <li>Los torneos más importantes del mundo y programas</li>
+                            </ul>
+                            </p>
                         </div>
                     </div>
                 </div>
+                <div class="accordion-item ">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            <p class="text-white fs-5 titulos-secciones2">¿Cómo puedo pagar?</p>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class=" accordion-body">
+                            <p class="text-white titulos-secciones2">Podrás pagar con tarjeta de crédito o débito,
+                                Mercado Pago o a
+                                través
+                                de
+                                terceros como Mercado Libre y proveedores locales de TV, telefonía e internet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <p class="text-white fs-5 titulos-secciones2">Dónde ver CLAP</p>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p class="text-white titulos-secciones2">La aplicación de CLAP está disponible en tu
+                                dispositivo móvil,
+                                navegador
+                                web, consola de videojuegos, decodificador y Smart TV. Podrás ver la lista completa
+                                de
+                                dispositivos compatibles en el Centro de ayuda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFour">
+                            <p class="text-white fs-5 titulos-secciones titulos-secciones2">¿Cómo puedo registrarme?</p>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p class="text-white titulos-secciones2">CLAP está disponible en CLAP.com y a través de los
+                                proveedores de
+                                CLAP
+                                en
+                                la región.
+                                Si obtienes CLAP con tu paquete de TV, servicio de Internet o telefonía móvil,
+                                podrás
+                                tener
+                                acceso a CLAP VIP sin costo adicional. Puedes contactar a tu operador local para
+                                obtener
+                                más
+                                detalles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    
-    
+
     <div class="modal fade" id="modalSerie1" tabindex="-1" aria-labelledby="modalSerie1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content bg-dark text-white">
-                    <div class="modal-body p-0">
-                        <div class="position-relative">
-                            <video class="img-fluid w-100" autoplay muted loop playsinline>
-                                <source src="./Assets/img/4882749-uhd_4096_2160_25fps.mp4" type="video/mp4"
-                                    alt="Video serie" />
-                            </video>
-                            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
-                                data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="p-4">
-                            <h2>Fragmentos del Eclipse</h2>
-                            <p class="text-white mb-1">
-                                2025 • 3 temporadas • <span class="badge bg-danger text-white">HD</span>
-                            </p>
-                            <p class="small">
-                                16+ • violencia, lenguaje inapropiado, suspenso
-                            </p>
-                            <p><strong>Mirá la temporada final ahora</strong></p>
-                            <p><strong>Temporada 1</strong> «Ecos del Eclipse»</p>
-                            <p class="descripcion-textos">
-                                En un futuro cercano, la humanidad ha sobrevivido a un evento global conocido como “El
-                                Eclipse”,
-                                una catástrofe que alteró el tiempo y la percepción de la realidad. Un grupo de
-                                sobrevivientes
-                                descubre que cada eclipse activa recuerdos ocultos que podrían cambiar el destino del mundo.
-                            </p>
-                            <h4 class="mt-4">Episodios</h4>
-                            <div class="bg-capitulos text-white d-flex align-items-center mb-2 ">
-                                <div class="position-relative episodio-img">
-                                    <img src="./Assets/img/episodio1.png" alt="Ep1" class="w-100 rounded" />
-                                    <button type="button"
-                                        class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle"
-                                        data-bs-toggle="modal" data-bs-target="#modalVideo1">
-                                        <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
-                                    </button>
-                                </div>
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-body p-0">
+                    <div class="position-relative">
+                        <video class="img-fluid w-100" autoplay muted loop playsinline>
+                            <source src="./Assets/img/4882749-uhd_4096_2160_25fps.mp4" type="video/mp4"
+                                alt="Video serie" />
+                        </video>
+                        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="p-4">
+                        <h2>Fragmentos del Eclipse</h2>
+                        <p class="text-white mb-1">
+                            2025 • 3 temporadas • <span class="badge bg-danger text-white">HD</span>
+                        </p>
+                        <p class="small">
+                            16+ • violencia, lenguaje inapropiado, suspenso
+                        </p>
+                        <p><strong>Mirá la temporada final ahora</strong></p>
+                        <p><strong>Temporada 1</strong> «Ecos del Eclipse»</p>
+                        <p class="descripcion-textos">
+                            En un futuro cercano, la humanidad ha sobrevivido a un evento global conocido como “El
+                            Eclipse”,
+                            una catástrofe que alteró el tiempo y la percepción de la realidad. Un grupo de
+                            sobrevivientes
+                            descubre que cada eclipse activa recuerdos ocultos que podrían cambiar el destino del mundo.
+                        </p>
+                        <h4 class="mt-4">Episodios</h4>
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2 ">
+                            <div class="position-relative episodio-img">
+                                <img src="./Assets/img/episodio1.png" alt="Ep1" class="w-100 rounded" />
+                                <button type="button"
+                                    class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle"
+                                    data-bs-toggle="modal" data-bs-target="#modalVideo1">
+                                    <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
+                                </button>
+                            </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
                                     1. Ecos del Eclipse
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
-                                        Tras una noche sin estrellas, cinco desconocidos despiertan en diferentes partes del
-                                        mundo...
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
+                                    Tras una noche sin estrellas, cinco desconocidos despiertan en diferentes partes del
+                                    mundo...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
-                                    <i class="fa-regular fa-clock me-2"></i>43 min
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
+                                    <i class="fa-regular fa-clock me-2 "></i>43 min
                                 </small>
                             </div>
+                        </div>
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
+                            <div class="position-relative episodio-img">
+                                <img src="./Assets/img/episodio2-img.png" alt="Ep2" class="w-100 rounded" />
+                                <button type="button"
+                                    class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle"
+                                    data-bs-toggle="modal" data-bs-target="#modalvideo2">
+                                    <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
+                                </button>
                             </div>
-                            <div class="bg-capitulos text-white d-flex align-items-center mb-2">
-                                <div class="position-relative episodio-img">
-                                    <img src="./Assets/img/episodio2-img.png" alt="Ep2" class="w-100 rounded" />
-                                    <button type="button"
-                                        class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle"
-                                        data-bs-toggle="modal" data-bs-target="#modalvideo2">
-                                        <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
-                                    </button>
-                                </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
                                     2. Zona Cero
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
-                                        Una científica descubre que la causa del Eclipse no fue natural. Mientras investiga...
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
+                                    Una científica descubre que la causa del Eclipse no fue natural. Mientras
+                                    investiga...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>57 min
                                 </small>
                             </div>
+                        </div>
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
+                            <div class="position-relative episodio-img">
+                                <img src="./Assets/img/episodio3-img.png" alt="Ep3" class="w-100 rounded" />
+                                <button type="button"
+                                    class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle">
+                                    <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
+                                </button>
                             </div>
-                            <div class="bg-capitulos text-white d-flex align-items-center mb-2">
-                                <div class="position-relative episodio-img">
-                                    <img src="./Assets/img/episodio3-img.png" alt="Ep3" class="w-100 rounded" />
-                                    <button type="button"
-                                        class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle">
-                                        <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
-                                    </button>
-                                </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
-                                    3. La Teoría del Parpadeo
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
+                                    3. Teoría del Parpadeo
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
-                                        El grupo se encuentra por primera vez y descubre que todos tienen fragmentos de un
-                                        mismo
-                                        sueño...
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
+                                    El grupo se encuentra por primera vez y descubre que todos tienen fragmentos de un
+                                    mismo
+                                    sueño...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>48 min
                                 </small>
                             </div>
+                        </div>
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
+                            <div class="position-relative episodio-img">
+                                <img src="./Assets/img/episodio4-img.png" alt="Ep4" class="w-100 rounded" />
+                                <button type="button"
+                                    class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle">
+                                    <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
+                                </button>
                             </div>
-                            <div class="bg-capitulos text-white d-flex align-items-center mb-2">
-                                <div class="position-relative episodio-img">
-                                    <img src="./Assets/img/episodio4-img.png" alt="Ep4" class="w-100 rounded" />
-                                    <button type="button"
-                                        class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle">
-                                        <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
-                                    </button>
-                                </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
                                     4. Línea Fracturada
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
-                                        Se revela que el Eclipse alteró la línea de tiempo. Viajan a una ciudad
-                                        abandonada...
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
+                                    Se revela que el Eclipse alteró la línea de tiempo. Viajan a una ciudad
+                                    abandonada...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>50 min
                                 </small>
                             </div>
+                        </div>
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
+                            <div class="position-relative episodio-img">
+                                <img src="./Assets/img/episodio5-img.png" alt="Ep5" class="w-100 rounded" />
+                                <button type="button"
+                                    class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle">
+                                    <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
+                                </button>
                             </div>
-                            <div class="bg-capitulos text-white d-flex align-items-center mb-2">
-                                <div class="position-relative episodio-img">
-                                    <img src="./Assets/img/episodio5-img.png" alt="Ep5" class="w-100 rounded" />
-                                    <button type="button"
-                                        class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle">
-                                        <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
-                                    </button>
-                                </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
                                     5. Registro 33
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
-                                        Un archivo digital perdido revela que el Eclipse fue predicho por una civilización
-                                        antigua...
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50 ">
+                                    Un archivo digital perdido revela que el Eclipse fue predicho por una civilización
+                                    antigua...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>42 min
                                 </small>
                             </div>
+                        </div>
+                        <div class="bg-capitulos text-white d-flex align-items-center mb-2">
+                            <div class="position-relative episodio-img">
+                                <img src="./Assets/img/episodio7-img.png" alt="Ep6" class="w-100 rounded" />
+                                <button type="button"
+                                    class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle">
+                                    <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
+                                </button>
                             </div>
-                            <div class="bg-capitulos text-white d-flex align-items-center mb-2">
-                                <div class="position-relative episodio-img">
-                                    <img src="./Assets/img/episodio7-img.png" alt="Ep6" class="w-100 rounded" />
-                                    <button type="button"
-                                        class="btn p-0 icono-play position-absolute top-50 start-50 translate-middle">
-                                        <i class="bi bi-play-circle-fill fs-2 text-primary"></i>
-                                    </button>
-                                </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
                                     6. El Umbral
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
-                                        Uno de los protagonistas cruza “el Umbral” y queda atrapado entre realidades
-                                        paralelas...
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
+                                    Uno de los protagonistas cruza “el Umbral” y queda atrapado entre realidades
+                                    paralelas...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>46 min
                                 </small>
                             </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
-    
-    
+
+
     <div class="modal fade" id="modalVideo1" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content bg-dark text-white">
-                    <div class="modal-header border-0 ">
-                        <h5 class="modal-title descripcion-textos2" id="modalVideo1Label">
-                            Reproduciendo: Ecos del Eclipse
-                        </h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <div class="ratio ratio-16x9">
-                            <video class="img-fluid w-100" autoplay muted loop playsinline>
-                                <source src="./Assets/img/episodioreproduciendo.mp4" type="video/mp4" alt="Video serie" />
-                            </video>
-                        </div>
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0 ">
+                    <h5 class="modal-title text-white-50 titulo-capitulos" id="modalVideo1Label">
+                        Reproduciendo: Ecos del Eclipse
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <video class="img-fluid w-100" autoplay muted loop playsinline>
+                            <source src="./Assets/img/episodioreproduciendo.mp4" type="video/mp4" alt="Video serie" />
+                        </video>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
-    
+
     <div class="modal fade" id="modalvideo2" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content bg-dark text-white">
-                    <div class="modal-header border-0">
-                        <h5 class="modal-title descripcion-textos2" id="modalVideo1Label">
-                            Reproduciendo: Zona Cero
-                        </h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <div class="ratio ratio-16x9">
-                            <video class="img-fluid w-100" autoplay muted loop playsinline>
-                                <source src="./Assets/img/episodio2reproduciendo.mp4" type="video/mp4" alt="Video serie" />
-                            </video>
-                        </div>
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white-50 titulo-capitulos" id="modalVideo1Label">
+                        Reproduciendo: Zona Cero
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <video class="img-fluid w-100" autoplay muted loop playsinline>
+                            <source src="./Assets/img/episodio2reproduciendo.mp4" type="video/mp4" alt="Video serie" />
+                        </video>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
-    
+
     <footer class="footer-custom text-white pt-5 mt-5">
-            <div class="container">
-                <div class="row text-center text-md-start align-items-center">
-                    <div class="col-6 col-md-4 col-lg-4 mb-4 mb-lg-0">
-                        <a href="./index.html"
-                            class="text-decoration-none text-white d-flex align-items-center justify-content-center justify-content-md-start">
-                            <img src="./Assets/img/Clap.png" alt="Logo" height="100" class="me-5 logo-footer" />
-                        </a>
-                    </div>
-                    <div
-                        class="col-6 col-md-4 col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center justify-content-md-center align-items-lg-center gap-4">
-                        <a href="https://github.com/tomasgomez18/Proyecto-Streamming" target="_blank"
-                            class="text-white fs-4 social-icon"><i class="bi bi-github"></i></a>
-                        <a href="./Pages/error404.html" class="text-white fs-4 social-icon"><i
-                                class="bi bi-linkedin"></i></a>
-                        <a href="./Pages/error404.html" class="text-white fs-4 social-icon"><i
-                                class="bi bi-instagram"></i></a>
-                        <a href="./Pages/error404.html" class="text-white fs-4 social-icon"><i
-                                class="bi bi-facebook"></i></a>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-4 d-flex flex-column align-items-center align-items-lg-end gap-2">
-                        <a href="./Pages/acercadenosotros.html" class="footer-link align-items-lg-start">Acerca de
-                            nosotros</a>
-                        <a href="./Pages/contacto.html" class="footer-link ">Contacto</a>
-                        <a href="./Pages/error404.html" class="footer-link">Términos y condiciones</a>
-                    </div>
+        <div class="container">
+            <div class="row text-center text-md-start align-items-center">
+                <div class="col-6 col-md-4 col-lg-4 mb-4 mb-lg-0">
+                    <a href="./index.html"
+                        class="text-decoration-none text-white d-flex align-items-center justify-content-center justify-content-md-start">
+                        <img src="./Assets/img/Clap.png" alt="Logo" height="100" class="me-5 logo-footer" />
+                    </a>
                 </div>
-                <hr class="my-4 border-secondary">
-                <div class="text-center small text-white pb-3">
-                    &copy; CLAP 2025 Todos los derechos reservados.
+                <div
+                    class="col-6 col-md-4 col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center justify-content-md-center align-items-lg-center gap-4">
+                    <a href="https://github.com/tomasgomez18/Proyecto-Streamming" target="_blank"
+                        class="text-white fs-4 social-icon"><i class="bi bi-github"></i></a>
+                    <a href="https://trello.com/b/dCRO3zYH/plataforma-streaming-grupo-2" target="_blank"
+                        class="text-white fs-4 social-icon"><i class="bi bi-trello"></i></a>
+                    <a href="./Pages/error404.html" target="_blank" class="text-white fs-4 social-icon"><i
+                            class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 d-flex flex-column align-items-center align-items-lg-end gap-2">
+                    <a href="./Pages/acercadenosotros.html" class="footer-link align-items-lg-start">Acerca de
+                        nosotros</a>
+                    <a href="./Pages/contacto.html" class="footer-link ">Contacto</a>
+                    <a href="./Pages/error404.html" class="footer-link">Términos y condiciones</a>
                 </div>
             </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center small text-white-50 pb-3">
+                &copy; CLAP 2025 Todos los derechos reservados.
+            </div>
+        </div>
     </footer>
-    
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -615,4 +620,5 @@
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
         crossorigin="anonymous"></script>>
 </body>
+
 </html>

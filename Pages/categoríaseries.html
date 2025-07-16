@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plataforma streamming-video de código abierto y gratuito. Disfruta de películas, series y documentales">
-    <meta name="keywords" content="streaming, video, open source, gratuito, plataforma, peliculas, series, documentales, anime, multimedia">
+    <meta name="description" content="Plataforma streaming-video de código abierto. Disfruta de películas, series.">
+    <meta name="keywords" content="streaming, video, open source, plataforma, peliculas, series, documentales, contenido multimedia">
     <meta name="author" content="Tomás Gómez, Pablo Basso, Juan Pablo Romero, Luahana Jakubowicz">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
@@ -19,33 +19,52 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-glass fixed-top py-3" data-aos="fade-down" data-aos-delay="100">
-                <div class="container-fluid">
-                    <a class="navbar-brand d-flex align-items-center ms-4" href="../index.html">
-                        <img src="../Assets/img/Clap.png" alt="Logo" height="70" width="80" class="me-2" />
-                    </a>
-                    <button class="navbar-toggler text-white bg-gray rounded" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav me-3">
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold text-white"
-                                    href="../Pages/categoríapelículas.html">PELÍCULAS</a>
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center ms-4" href="../index.html">
+                    <img src="../Assets/img/Clap.png" alt="Logo" height="70" width="80" class="me-2" />
+                </a>
+                <button class="navbar-toggler text-white bg-gray rounded" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-3">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-white" href="../Pages/categoríapelículas.html">PELÍCULAS</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex justify-content-center w-100 my-3 my-lg-0 gap-2 " role="search">
+                        <div class="search-wrapper position-relative w-75">
+                            <input class="form-control search-input" type="search"
+                                placeholder="Buscar series o películas" />
+                            <i
+                                class="fa fa-search search-icon position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                        </div>
+                        <div class="d-flex d-lg-none align-items-center">
+                            <img src="../Assets/img/avatar perfil.png" alt="avatar" width="35" height="35"
+                                class="rounded-circle" />
+                        </div>
+                    </form>
+                    <div class="dropdown d-none d-lg-flex align-items-center">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            id="avatarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../Assets/img/avatar perfil.png" alt="avatar" width="35" height="35"
+                                class="rounded-circle ms-5" />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end bg-glass" aria-labelledby="avatarDropdown">
+                            <li><a class="dropdown-item" href="../Pages/error404.html">Mi perfil</a></li>
+                            <li><a class="dropdown-item" href="../Pages/error404.html">Configuración</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
                             </li>
+                            <li><a class="dropdown-item" href="../Pages/error404.html">Cerrar sesión</a></li>
                         </ul>
-                        <form class="d-flex justify-content-center w-100 my-3 my-lg-0 " role="search">
-                            <div class="search-wrapper position-relative w-75">
-                                <input class="form-control search-input" type="search"
-                                    placeholder="Buscar series o películas" />
-                                <i
-                                    class="fa fa-search search-icon position-absolute top-50 end-0 translate-middle-y me-3"></i>
-                            </div>
-                        </form>
                     </div>
                 </div>
-            </nav>
+            </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -58,10 +77,11 @@
                 <h1 class="descripcion-titulo">Celdas Cruzadas</h1>
                 <p class="descripcion-subtitulo ms-3 fs-5 fw-bold">Top 10 en series más vistas</p>
                 <div class="d-flex ms-3 mt-5">
-                    <a class="btn btn-light btn-play fw-bold" href="../Pages/login.html">
+                    <a class="btn btn-light btn-play fw-bold titulo-botones" href="../Pages/login.html">
                         <i class="fas fa-play"></i> Reproducir
                     </a>
-                    <a class="btn btn-secondary btn-info" href="#" data-bs-toggle="modal" data-bs-target="#modalSerie1">
+                    <a class="btn btn-secondary btn-info titulo-botones" href="#" data-bs-toggle="modal"
+                        data-bs-target="#modalSerie1">
                         <i class="fas fa-info-circle"></i> Más información
                     </a>
                 </div>
@@ -69,25 +89,27 @@
         </section>
 
         <section class="container my-5">
-            <h3 class="text-white-50  fw-light mb-4">Series para maratonear</h3>
+            <h3 class="text-white-50  fw-light mb-4 titulos-secciones">Series para maratonear</h3>
 
             <div class="row g-4 " id="contenido-popular">
 
                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
                     <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-                            <div class="top-10-badge position-absolute text-center">
-                                <span class="d-block">TOP</span>
-                                <span class="d-block">10</span>
-                            </div>                         
+                        <div class="top-10-badge position-absolute text-center">
+                            <span class="d-block">TOP</span>
+                            <span class="d-block">10</span>
+                        </div>
                         <img src="../Assets/img/serie9.png" class="card-img" alt="Serie" />
-                            <div class="icono-play-mobile d-block d-sm-none">
-                                <button class="btn btn-primary btn-sm rounded-circle" data-bs-toggle="modal" data-bs-target="#modalSerie2"><i
-                                        class="bi bi-play-fill"></i></button>
-                            </div>
-                        <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
+                        <div class="icono-play-mobile d-block d-sm-none">
+                            <button class="btn btn-primary btn-sm rounded-circle" data-bs-toggle="modal"
+                                data-bs-target="#modalSerie2"><i class="bi bi-play-fill"></i></button>
+                        </div>
+                        <div
+                            class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
                             <h5 class="fw-bold text-center mb-3">Entre Valses y Traiciones</h5>
                             <div class="d-flex justify-content-around mb-2">
-                                <button class="btn btn-primary btn-sm rounded-circle" data-bs-toggle="modal" data-bs-target="#modalvideo3">
+                                <button class="btn btn-primary btn-sm rounded-circle" data-bs-toggle="modal"
+                                    data-bs-target="#modalvideo3">
                                     <i class="bi bi-play-fill"></i>
                                 </button>
                                 <button class="btn btn-light btn-sm rounded-circle">
@@ -113,76 +135,84 @@
                 </div>
 
                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-                                    <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-                                        <img src="../Assets/img/serie1.jpg" class="card-img" alt="Serie" />
-                                        <div class="icono-play-mobile d-block d-sm-none">
-                                            <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-                                        </div>
-                                        <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
-                                            <h5 class="fw-bold text-center mb-3">Sombras y Encajes</h5>
-                                            <div class="d-flex justify-content-around mb-2">
-                                                <button class="btn btn-primary btn-sm rounded-circle">
-                                                    <i class="bi bi-play-fill"></i>
-                                                </button>
-                                                <button class="btn btn-light btn-sm rounded-circle">
-                                                    <i class="bi bi-hand-thumbs-up"></i>
-                                                </button>
-                                                <button class="btn btn-light btn-sm rounded-circle">
-                                                    <i class="bi bi-chevron-down"></i>
-                                                </button>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
-                                                <span class="badge bg-danger">16+</span>
-                                                <span class="text-white ">Miniserie</span>
-                                                <span class="badge bg-danger">HD</span>
-                                            </div>
-                                            <p class="text-white small mt-2 mb-0 text-center"> Misterio • Thriller •
-                                                De España • año 2024</p>
-                                        </div>
-                                    </div>
+                    <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
+                        <img src="../Assets/img/serie1.jpg" class="card-img" alt="Serie" />
+                        <div class="icono-play-mobile d-block d-sm-none">
+                            <button class="btn btn-primary btn-sm rounded-circle"><i
+                                    class="bi bi-play-fill"></i></button>
+                        </div>
+                        <div
+                            class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
+                            <h5 class="fw-bold text-center mb-3">Sombras y Encajes</h5>
+                            <div class="d-flex justify-content-around mb-2">
+                                <button class="btn btn-primary btn-sm rounded-circle">
+                                    <i class="bi bi-play-fill"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm rounded-circle">
+                                    <i class="bi bi-hand-thumbs-up"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm rounded-circle">
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div
+                                class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
+                                <span class="badge bg-danger">16+</span>
+                                <span class="text-white ">Miniserie</span>
+                                <span class="badge bg-danger">HD</span>
+                            </div>
+                            <p class="text-white small mt-2 mb-0 text-center"> Misterio • Thriller •
+                                De España • año 2024</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
-                                    <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-                                            <div class="top-10-badge position-absolute text-center">
-                                                <span class="d-block">TOP</span>
-                                                <span class="d-block">10</span>
-                                            </div>                                         
-                                        <img src="../Assets/img/serie2.jpg" class="card-img" alt="Serie" />
-                                        <div class="icono-play-mobile d-block d-sm-none">
-                                            <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
-                                        </div>
-                                        <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
-                                            <h5 class="fw-bold text-center mb-3">Profesor Gray</h5>
-                                            <div class="d-flex justify-content-around mb-2">
-                                                <button class="btn btn-primary btn-sm rounded-circle">
-                                                    <i class="bi bi-play-fill"></i>
-                                                </button>
-                                                <button class="btn btn-light btn-sm rounded-circle">
-                                                    <i class="bi bi-hand-thumbs-up"></i>
-                                                </button>
-                                                <button class="btn btn-light btn-sm rounded-circle">
-                                                    <i class="bi bi-chevron-down"></i>
-                                                </button>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
-                                                <span class="badge bg-danger">16+</span>
-                                                <span class="text-white ">Serie</span>
-                                                <span class="badge bg-danger">HD</span>
-                                            </div>
-                                            <p class="text-white  small mt-2 mb-0 text-center"> Ciencia ficción • Misterio •
-                                                De Estados Unidos • año 2025</p>
-                                        </div>
-                                    </div>
+                    <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
+                        <div class="top-10-badge position-absolute text-center">
+                            <span class="d-block">TOP</span>
+                            <span class="d-block">10</span>
+                        </div>
+                        <img src="../Assets/img/serie2.jpg" class="card-img" alt="Serie" />
+                        <div class="icono-play-mobile d-block d-sm-none">
+                            <button class="btn btn-primary btn-sm rounded-circle"><i
+                                    class="bi bi-play-fill"></i></button>
+                        </div>
+                        <div
+                            class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
+                            <h5 class="fw-bold text-center mb-3">Profesor Gray</h5>
+                            <div class="d-flex justify-content-around mb-2">
+                                <button class="btn btn-primary btn-sm rounded-circle">
+                                    <i class="bi bi-play-fill"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm rounded-circle">
+                                    <i class="bi bi-hand-thumbs-up"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm rounded-circle">
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div
+                                class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
+                                <span class="badge bg-danger">16+</span>
+                                <span class="text-white ">Serie</span>
+                                <span class="badge bg-danger">HD</span>
+                            </div>
+                            <p class="text-white  small mt-2 mb-0 text-center"> Ciencia ficción • Misterio •
+                                De Estados Unidos • año 2025</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
                     <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
                         <img src="../Assets/img/serie3.jpg" class="card-img" alt="Serie" />
                         <div class="icono-play-mobile d-block d-sm-none">
-                            <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
+                            <button class="btn btn-primary btn-sm rounded-circle"><i
+                                    class="bi bi-play-fill"></i></button>
                         </div>
-                        <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
+                        <div
+                            class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
                             <h5 class="fw-bold text-center mb-3">La Torre del Silencio</h5>
                             <div class="d-flex justify-content-around mb-2">
                                 <button class="btn btn-primary btn-sm rounded-circle">
@@ -195,7 +225,8 @@
                                     <i class="bi bi-chevron-down"></i>
                                 </button>
                             </div>
-                            <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
+                            <div
+                                class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
                                 <span class="badge bg-danger">16+</span>
                                 <span class="text-white ">Serie</span>
                                 <span class="badge bg-danger">HD</span>
@@ -208,15 +239,17 @@
 
                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
                     <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-                            <div class="top-10-badge position-absolute text-center">
-                                <span class="d-block">TOP</span>
-                                <span class="d-block">10</span>
-                            </div>                        
+                        <div class="top-10-badge position-absolute text-center">
+                            <span class="d-block">TOP</span>
+                            <span class="d-block">10</span>
+                        </div>
                         <img src="../Assets/img/serie4.jpg" class="card-img" alt="Serie" />
                         <div class="icono-play-mobile d-block d-sm-none">
-                            <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
+                            <button class="btn btn-primary btn-sm rounded-circle"><i
+                                    class="bi bi-play-fill"></i></button>
                         </div>
-                        <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
+                        <div
+                            class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
                             <h5 class="fw-bold text-center mb-3">Aurora</h5>
                             <div class="d-flex justify-content-around mb-2">
                                 <button class="btn btn-primary btn-sm rounded-circle">
@@ -229,7 +262,8 @@
                                     <i class="bi bi-chevron-down"></i>
                                 </button>
                             </div>
-                            <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
+                            <div
+                                class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
                                 <span class="badge bg-danger">16+</span>
                                 <span class="text-white ">Serie</span>
                                 <span class="badge bg-danger">HD</span>
@@ -242,15 +276,17 @@
 
                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
                     <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-                            <div class="top-10-badge position-absolute text-center">
-                                <span class="d-block">TOP</span>
-                                <span class="d-block">10</span>
-                            </div> 
+                        <div class="top-10-badge position-absolute text-center">
+                            <span class="d-block">TOP</span>
+                            <span class="d-block">10</span>
+                        </div>
                         <img src="../Assets/img/serie5.jpg" class="card-img" alt="Serie" />
                         <div class="icono-play-mobile d-block d-sm-none">
-                            <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
+                            <button class="btn btn-primary btn-sm rounded-circle"><i
+                                    class="bi bi-play-fill"></i></button>
                         </div>
-                        <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
+                        <div
+                            class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
                             <h5 class="fw-bold text-center mb-3">Vestida para Mentir</h5>
                             <div class="d-flex justify-content-around mb-2">
                                 <button class="btn btn-primary btn-sm rounded-circle">
@@ -263,7 +299,8 @@
                                     <i class="bi bi-chevron-down"></i>
                                 </button>
                             </div>
-                            <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
+                            <div
+                                class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
                                 <span class="badge bg-danger">16+</span>
                                 <span class="text-white ">Miniserie</span>
                                 <span class="badge bg-danger">HD</span>
@@ -278,9 +315,11 @@
                     <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
                         <img src="../Assets/img/serie6.jpg" class="card-img" alt="Serie" />
                         <div class="icono-play-mobile d-block d-sm-none">
-                            <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
+                            <button class="btn btn-primary btn-sm rounded-circle"><i
+                                    class="bi bi-play-fill"></i></button>
                         </div>
-                        <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
+                        <div
+                            class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
                             <h5 class="fw-bold text-center mb-3">Promesa de Medianoche</h5>
                             <div class="d-flex justify-content-around mb-2">
                                 <button class="btn btn-primary btn-sm rounded-circle">
@@ -293,7 +332,8 @@
                                     <i class="bi bi-chevron-down"></i>
                                 </button>
                             </div>
-                            <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
+                            <div
+                                class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
                                 <span class="badge bg-danger">16+</span>
                                 <span class="text-white ">Serie</span>
                                 <span class="badge bg-danger">HD</span>
@@ -306,15 +346,17 @@
 
                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
                     <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
-                            <div class="top-10-badge position-absolute text-center">
-                                <span class="d-block">TOP</span>
-                                <span class="d-block">10</span>
-                            </div>                         
+                        <div class="top-10-badge position-absolute text-center">
+                            <span class="d-block">TOP</span>
+                            <span class="d-block">10</span>
+                        </div>
                         <img src="../Assets/img/serie7.jpg" class="card-img" alt="Serie" />
                         <div class="icono-play-mobile d-block d-sm-none">
-                            <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
+                            <button class="btn btn-primary btn-sm rounded-circle"><i
+                                    class="bi bi-play-fill"></i></button>
                         </div>
-                        <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
+                        <div
+                            class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
                             <h5 class="fw-bold text-white text-center mb-3">El Juramento del Oficial</h5>
                             <div class="d-flex justify-content-around mb-2">
                                 <button class="btn btn-primary btn-sm rounded-circle">
@@ -327,7 +369,8 @@
                                     <i class="bi bi-chevron-down"></i>
                                 </button>
                             </div>
-                            <div class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
+                            <div
+                                class="d-flex align-items-center justify-content-center gap-2 flex-wrap text-white-50 small">
                                 <span class="badge bg-danger">16+</span>
                                 <span class="text-white ">Miniserie</span>
                                 <span class="badge bg-danger">HD</span>
@@ -354,7 +397,6 @@
             </nav>
         </section>
     </main>
-
 
     <div class="modal fade" id="modalSerie1" tabindex="-1" aria-labelledby="modalSerie1Label" aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -397,14 +439,14 @@
                                 </button>
                             </div>
                             <div class="ms-2 ">
-                                <h6 class="mb-0 fw-bold">
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
                                     1. El Silencio del Acero
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
                                     Nick es trasladado a una prisión de máxima seguridad, ahora debe enfrentarse al
                                     encierro ...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>45 min
                                 </small>
                             </div>
@@ -419,14 +461,14 @@
                                 </button>
                             </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
-                                    2. El Hombre del Cuaderno
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
+                                    2. El escritor
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
                                     Jason anota todo lo que ocurre en la cárcel. Su cuaderno contiene nombres, fechas y
                                     secretos...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>51 min
                                 </small>
                             </div>
@@ -440,13 +482,13 @@
                                 </button>
                             </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
                                     3. La Reina del Ala B
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
                                     Una reclusa peligrosa y astuta,lidera el pabellón de mujeres. Nadie entra ni sale...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>55 min
                                 </small>
                             </div>
@@ -460,14 +502,14 @@
                                 </button>
                             </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
                                     4. Sonríe, Oficial
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
                                     El guardia parece ser amable y comprensivo, algo en su sonrisa genera
                                     desconfianza...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>49 min
                                 </small>
                             </div>
@@ -481,13 +523,13 @@
                                 </button>
                             </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
                                     5. Código de Sangre
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
                                     Solo uno saldrá con vida y no necesariamente el más inocente...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>50 min
                                 </small>
                             </div>
@@ -498,12 +540,11 @@
         </div>
     </div>
 
-
     <div class="modal fade" id="modalVideo1" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content bg-dark text-white">
                 <div class="modal-header border-0">
-                    <h5 class="modal-title descripcion-textos2" id="modalVideo1Label">
+                    <h5 class="modal-title text-white-50 titulo-capitulos" id="modalVideo1Label">
                         Reproduciendo: El Silencio del Acero
                     </h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
@@ -524,8 +565,8 @@
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content bg-dark text-white">
                 <div class="modal-header border-0">
-                    <h5 class="modal-title descripcion-textos2" id="modalVideo1Label">
-                        Reproduciendo: El Hombre del Cuaderno
+                    <h5 class="modal-title text-white-50 titulo-capitulos" id="modalVideo1Label">
+                        Reproduciendo: El escritor
                     </h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Cerrar"></button>
@@ -581,13 +622,13 @@
                                 </button>
                             </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
-                                    1. El baile de las Promesas
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
+                                    1. Las Promesas
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
                                     La llegada del Capitán Duvall causa sensación en el baile de invierno.
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>55 min
                                 </small>
                             </div>
@@ -602,13 +643,13 @@
                                 </button>
                             </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
-                                    2. Banquete de apariencias
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
+                                    2.Las apariencias
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
                                     Mientras las copas chocan y las risas llenan el salón, se tejen planes ocultos...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>50 min
                                 </small>
                             </div>
@@ -622,13 +663,13 @@
                                 </button>
                             </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
-                                    3. La noche de las verdades
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
+                                    3. Entre verdades
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
                                     Una cena privada, una carta descubierta y una traición inesperada...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>46 min
                                 </small>
                             </div>
@@ -642,13 +683,13 @@
                                 </button>
                             </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
                                     4. La Soledad del Salón
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
                                     Élise, aislada tras los rumores, deambula sola por el gran salón...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>42 min
                                 </small>
                             </div>
@@ -662,13 +703,13 @@
                                 </button>
                             </div>
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-bold">
+                                <h6 class="mb-0 fw-bold titulo-capitulos">
                                     5. Bajo la luz de las velas
                                 </h6>
-                                <p class="mb-0 ms-2 small d-none d-sm-block descripcion-textos2">
+                                <p class="mb-0 ms-2 small d-none d-sm-block text-white-50">
                                     Los aliados se reúnen. Los enemigos también. Una última cena...
                                 </p>
-                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1">
+                                <small class="text-white-50 ms-1 d-sm-md-inline d-block mt-1 titulo-capitulos">
                                     <i class="fa-regular fa-clock me-2"></i>42 min
                                 </small>
                             </div>
@@ -683,8 +724,8 @@
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content bg-dark text-white">
                 <div class="modal-header border-0">
-                    <h5 class="modal-title descripcion-textos2" id="modalVideo1Label">
-                        Reproduciendo: El baile de las Promesas
+                    <h5 class="modal-title text-white-50 titulo-capitulos" id="modalVideo1Label">
+                        Reproduciendo: Las Promesas
                     </h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Cerrar"></button>
@@ -704,8 +745,8 @@
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content bg-dark text-white">
                 <div class="modal-header border-0">
-                    <h5 class="modal-title descripcion-textos2" id="modalVideo1Label">
-                        Reproduciendo: Banquete de apariencias
+                    <h5 class="modal-title text-white-50 titulo-capitulos" id="modalVideo1Label">
+                        Reproduciendo: Las apariencias
                     </h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Cerrar"></button>
@@ -730,17 +771,15 @@
                         <img src="../Assets/img/Clap.png" alt="Logo" height="100" class="me-5 logo-footer" />
                     </a>
                 </div>
-                    <div
-                        class="col-6 col-md-4 col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center justify-content-md-center align-items-lg-center gap-4">
-                        <a href="https://github.com/tomasgomez18/Proyecto-Streamming" target="_blank"
-                            class="text-white fs-4 social-icon"><i class="bi bi-github"></i></a>
-                        <a href="../Pages/error404.html" class="text-white fs-4 social-icon"><i
-                                class="bi bi-linkedin"></i></a>
-                        <a href="../Pages/error404.html" class="text-white fs-4 social-icon"><i
-                                class="bi bi-instagram"></i></a>
-                        <a href="../Pages/error404.html" class="text-white fs-4 social-icon"><i
-                                class="bi bi-facebook"></i></a>
-                    </div>
+                <div
+                    class="col-6 col-md-4 col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center justify-content-md-center align-items-lg-center gap-4">
+                    <a href="https://github.com/tomasgomez18/Proyecto-Streamming" target="_blank"
+                        class="text-white fs-4 social-icon"><i class="bi bi-github"></i></a>
+                    <a href="https://trello.com/b/dCRO3zYH/plataforma-streaming-grupo-2" target="_blank"
+                        class="text-white fs-4 social-icon"><i class="bi bi-trello"></i></a>
+                    <a href="../Pages/error404.html" target="_blank" class="text-white fs-4 social-icon"><i
+                            class="bi bi-linkedin"></i></a>
+                </div>
                 <div class="col-12 col-md-4 col-lg-4 d-flex flex-column align-items-center align-items-lg-end gap-2">
                     <a href="../Pages/acercadenosotros.html" class="footer-link align-items-lg-start">Acerca de
                         nosotros</a>
@@ -749,7 +788,7 @@
                 </div>
             </div>
             <hr class="my-4 border-secondary">
-            <div class="text-center small text-white pb-3">
+            <div class="text-center small text-white-50 pb-3">
                 &copy; CLAP 2025 Todos los derechos reservados.
             </div>
         </div>
@@ -768,4 +807,5 @@
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
         crossorigin="anonymous"></script>>
 </body>
+
 </html>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plataforma streamming-video de código abierto y gratuito. Disfruta de películas, series, documentales y anime sin costo alguno.">
-    <meta name="keywords" content="streaming, video, open source, gratuito, plataforma, peliculas, series, documentales, anime, contenido multimedia">
+    <meta name="description" content="Plataforma streaming-video de código abierto. Disfruta de películas, series.">
+    <meta name="keywords" content="streaming, video, open source, plataforma, peliculas, series, documentales, contenido multimedia">
     <meta name="author" content="Tomás Gómez, Pablo Basso, Juan Pablo Romero, Luahana Jakubowicz">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-glass fixed-top py-3" data-aos="fade-down"data-aos-delay="100">
+    <nav class="navbar navbar-expand-lg bg-glass fixed-top py-3" data-aos="fade-down" data-aos-delay="100">
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center ms-4" href="../index.html">
           <img src="../Assets/img/Clap.png" alt="Logo" height="70" width="80" class="me-2" />
@@ -32,13 +32,32 @@
               <a class="nav-link fw-bold text-white" href="../Pages/categoríaseries.html">SERIES</a>
             </li>
           </ul>
-          <form class="d-flex justify-content-center w-100 my-3 my-lg-0 " role="search">
+          <form class="d-flex justify-content-center w-100 my-3 my-lg-0 gap-2 " role="search">
             <div class="search-wrapper position-relative w-75">
               <input class="form-control search-input" type="search" placeholder="Buscar series o películas" />
               <i class="fa fa-search search-icon position-absolute top-50 end-0 translate-middle-y me-3"></i>
             </div>
+            <div class="d-flex d-lg-none align-items-center">
+              <img src="../Assets/img/avatar perfil.png" alt="avatar" width="35" height="35" class="rounded-circle" />
+            </div>
           </form>
+          <div class="dropdown d-none d-lg-flex align-items-center">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+              id="avatarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="../Assets/img/avatar perfil.png" alt="avatar" width="35" height="35"
+                class="rounded-circle ms-5" />
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end bg-glass" aria-labelledby="avatarDropdown">
+              <li><a class="dropdown-item" href="../Pages/error404.html">Mi perfil</a></li>
+              <li><a class="dropdown-item" href="../Pages/error404.html">Configuración</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="../Pages/error404.html">Cerrar sesión</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
       </div>
     </nav>
   </header>
@@ -53,18 +72,19 @@
         <h1 class=" descripcion-titulo">A la sombra del sol</h1>
         <p class="descripcion-subtitulo ms-3 fs-5 fw-bold">Lo más visto esta temporada</p>
         <div class="d-flex ms-3 mt-5">
-          <a class="btn btn-light btn-play fw-bold" data-bs-toggle="modal" data-bs-target="#modalPelicula2">
+          <a class="btn btn-light btn-play fw-bold titulo-botones" data-bs-toggle="modal"
+            data-bs-target="#modalPelicula2">
             <i class="fas fa-play"></i> Reproducir
           </a>
         </div>
       </div>
     </section>
-  
+
     <section class="container my-5">
-      <h3 class="text-white-50  fw-light mb-4">Destacados</h3>
-  
+      <h3 class="text-white-50 fw-light mb-4 titulos-secciones">Destacados</h3>
+
       <div class="row g-4 " id="contenido-popular">
-  
+
         <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
           <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
             <img src="../Assets/img/desdeAquiTodoCambia.jpg" class="card-img" alt="Pelicula" />
@@ -75,9 +95,9 @@
             <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
               <h5 class="fw-bold text-center mb-3">Desde aqui, todo cambia</h5>
               <div class="top-10-badge position-absolute text-center">
-                                <span class="d-block">TOP</span>
-                                <span class="d-block">10</span>
-                            </div>
+                <span class="d-block">TOP</span>
+                <span class="d-block">10</span>
+              </div>
               <div class="d-flex justify-content-around mb-2">
                 <button class="btn btn-primary btn-sm rounded-circle" data-bs-toggle="modal"
                   data-bs-target="#modalPelicula1"><i class="bi bi-play-fill"></i></button>
@@ -96,7 +116,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
           <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
             <img src="../Assets/img/Callate.jpg" class="card-img" alt="pelicula" />
@@ -122,7 +142,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
           <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
             <img src="../Assets/img/ElRastroDeLasLuciernagas.jpg" class="card-img" alt="pelicula" />
@@ -130,11 +150,11 @@
               <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
             </div>
             <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
-              <h5 class="fw-bold text-center mb-3">Las Luciérnagas</h5>
+              <h5 class="fw-bold text-center mb-3">El Rastro de las Luciérnagas</h5>
               <div class="top-10-badge position-absolute text-center">
-                                <span class="d-block">TOP</span>
-                                <span class="d-block">10</span>
-                            </div>
+                <span class="d-block">TOP</span>
+                <span class="d-block">10</span>
+              </div>
               <div class="d-flex justify-content-around mb-2">
                 <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
                 <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
@@ -152,7 +172,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
           <div class="card bg-dark text-white custom-card">
             <img src="../Assets/img/AntenaRota.jpg" class="card-img" alt="pelicula" />
@@ -162,9 +182,9 @@
             <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
               <h5 class="fw-bold text-center mb-3">Antena Rota</h5>
               <div class="top-10-badge position-absolute text-center">
-                                <span class="d-block">TOP</span>
-                                <span class="d-block">10</span>
-                            </div>
+                <span class="d-block">TOP</span>
+                <span class="d-block">10</span>
+              </div>
               <div class="d-flex justify-content-around mb-2">
                 <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
                 <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
@@ -182,7 +202,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
           <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
             <img src="../Assets/img/MateyTempestad.jpg" class="card-img" alt="pelicula" />
@@ -208,7 +228,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
           <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
             <img src="../Assets/img/CodigoEva.jpg" class="card-img" alt="pelicula" />
@@ -234,7 +254,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
           <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
             <img src="../Assets/img/GalaxiaPerdidos.jpg" class="card-img" alt="pelicula" />
@@ -244,9 +264,9 @@
             <div class="card-img-overlay d-none d-sm-flex flex-column justify-content-end p-3 gradient-overlay">
               <h5 class="fw-bold text-center mb-3">La Galaxia de los Perdidos</h5>
               <div class="top-10-badge position-absolute text-center">
-                                <span class="d-block">TOP</span>
-                                <span class="d-block">10</span>
-                            </div>
+                <span class="d-block">TOP</span>
+                <span class="d-block">10</span>
+              </div>
               <div class="d-flex justify-content-around mb-2">
                 <button class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button>
                 <button class="btn btn-light btn-sm rounded-circle"><i class="bi bi-hand-thumbs-up"></i></button>
@@ -264,7 +284,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center mb-4">
           <div class="card custom-card bg-dark text-white position-relative overflow-hidden">
             <img src="../Assets/img/GritosYCanciones.jpg" class="card-img" alt="pelicula" />
@@ -291,187 +311,186 @@
           </div>
         </div>
       </div>
-  
-  
-<nav class="d-flex justify-content-center mt-4">
-  <ul class="pagination pagination-oscura">
-    <li class="page-item">
-      <a class="page-link" href="#" onclick="cambiarPagina(1)">1</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#" onclick="cambiarPagina(2)">2</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#" onclick="cambiarPagina(3)">3</a>
-    </li>
-  </ul>
-</nav>
+
+
+      <nav class="d-flex justify-content-center mt-4">
+        <ul class="pagination pagination-oscura">
+          <li class="page-item">
+            <a class="page-link" href="#" onclick="cambiarPagina(1)">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#" onclick="cambiarPagina(2)">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#" onclick="cambiarPagina(3)">3</a>
+          </li>
+        </ul>
+      </nav>
     </section>
   </main>
-        <footer class="footer-custom text-white pt-5 mt-5">
-            <div class="container">
-                <div class="row text-center text-md-start align-items-center">
-                    <div class="col-6 col-md-4 col-lg-4 mb-4 mb-lg-0">
-                        <a href="../index.html"
-                            class="text-decoration-none text-white d-flex align-items-center justify-content-center justify-content-md-start">
-                            <img src="../Assets/img/Clap.png" alt="Logo" height="100" class="me-5 logo-footer" />
-                        </a>
-                    </div>
-                    <div
-                        class="col-6 col-md-4 col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center justify-content-md-center align-items-lg-center gap-4">
-                        <a href="https://github.com/tomasgomez18/Proyecto-Streamming" target="_blank"
-                            class="text-white fs-4 social-icon"><i class="bi bi-github"></i></a>
-                        <a href="../Pages/error404.html" class="text-white fs-4 social-icon"><i
-                                class="bi bi-linkedin"></i></a>
-                        <a href="../Pages/error404.html" class="text-white fs-4 social-icon"><i
-                                class="bi bi-instagram"></i></a>
-                        <a href="../Pages/error404.html" class="text-white fs-4 social-icon"><i
-                                class="bi bi-facebook"></i></a>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-4 d-flex flex-column align-items-center align-items-lg-end gap-2">
-                        <a href="../Pages/acercadenosotros.html" class="footer-link align-items-lg-start">Acerca de nosotros</a>
-                        <a href="../Pages/contacto.html" class="footer-link ">Contacto</a>
-                        <a href="../Pages/error404.html" class="footer-link">Términos y condiciones</a>
-                    </div>
-                </div>
-                <hr class="my-4 border-secondary">
-                <div class="text-center small text-white pb-3">
-                    &copy; CLAP 2025 Todos los derechos reservados.
-                </div>
-            </div>
-        </footer>
 
+  <div class="modal fade" id="modalPelicula1" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0 ">
+          <h5 class="modal-title text-white-50 titulo-capitulos" id="modalVideo1Label">
+            Reproduciendo: Desde aqui, todo cambia.
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
 
-    <div class="modal fade" id="modalPelicula1" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content bg-dark text-white">
-          <div class="modal-header border-0 ">
-            <h5 class="modal-title  descripcion-textos2" id="modalVideo1Label">
-              Reproduciendo: Desde aqui, todo cambia.
-            </h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          <div class="ratio ratio-16x9">
+            <video class="img-fluid w-100" autoplay muted loop playsinline>
+              <source src="../Assets/img/Pelicula1.mp4" type="video/mp4" alt="Video serie" />
+            </video>
+
           </div>
-          <div class="modal-body p-0">
-    
-            <div class="ratio ratio-16x9">
-              <video class="img-fluid w-100" autoplay muted loop playsinline>
-                <source src="../Assets/img/Pelicula1.mp4" type="video/mp4" alt="Video serie" />
-              </video>
-    
-            </div>
-            <p class="mt-2 text-center descripcion-textos px-5 my-5 d-none d-md-block">"Desde Aquí, Todo Cambia” es una
-              obra contemplativa que captura el
-              instante en que dos personas, en lo alto de una montaña, descubren que no solo el paisaje se transforma con la
-              luz del atardecer, sino también ellos. La película navega con sutileza entre el silencio y las emociones
-              latentes, mostrando que a veces, un cambio profundo comienza sin palabras solo con una mirada compartida hacia
-              el horizonte.
-            </p>
+          <p class="mt-4 text-center descripcion-textos px-5 my-5 d-none d-md-block">"Desde Aquí, Todo Cambia” es una
+            obra contemplativa que captura el
+            instante en que dos personas, en lo alto de una montaña, descubren que no solo el paisaje se transforma con
+            la
+            luz del atardecer, sino también ellos. La película navega con sutileza entre el silencio y las emociones
+            latentes, mostrando que a veces, un cambio profundo comienza sin palabras solo con una mirada compartida
+            hacia
+            el horizonte.
+          </p>
+        </div>
+        <div class="row g-4 mt-3 container d-flex  ms-1 mb-5 " id="contenido-popular">
+          <h3 class="text-white mb-4 fs-4 text-white-50 fw-light text-center titulos-secciones">Porque viste "desde aquí
+            todo cambia"
+            <hr>
+          </h3>
+
+          <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
+            <a class="img-overlay-wrapper">
+              <img src="../Assets/img/PajaroEnLlama.webp" class="img-fluid rounded" alt="Película 1">
+              <div class="img-overlay">
+                <h5>Pájaro en llamas</h5>
+              </div>
+            </a>
           </div>
-          <div class="row g-4 mt-3 container d-flex  ms-1 mb-5 " id="contenido-popular">
-            <h3 class="text-white mb-4 fs-4 text-white-50 fw-light text-center">Porque viste "desde aquí todo cambia"
-              <hr>
-            </h3>
-    
-            <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                <a class="img-overlay-wrapper">
-                    <img src="../Assets/img/PajaroEnLlama.webp" class="img-fluid rounded" alt="Película 1">
-                    <div class="img-overlay">
-                        <h5>Pájaro en llamas</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                <a class="img-overlay-wrapper">
-                    <img src="../Assets/img/ElEspejoDeAbril.webp" class="img-fluid rounded" alt="Película 2">
-                    <div class="img-overlay">
-                        <h5>El espejo de Abril</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                <a class="img-overlay-wrapper">
-                    <img src="../Assets/img/CiudadOlvidada.webp" class="img-fluid rounded" alt="Película 3">
-                    <div class="img-overlay">
-                        <h5>Ciudad olvidada</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                <a class="img-overlay-wrapper">
-                    <img src="../Assets/img/InstintoSubterraneo.webp" class="img-fluid rounded" alt="Película 4">
-                    <div class="img-overlay">
-                        <h5>Instinto subterráneo</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                <a class="img-overlay-wrapper">
-                    <img src="../Assets/img/NaufragoDelSistema.webp" class="img-fluid rounded" alt="Película 5">
-                    <div class="img-overlay">
-                        <h5>Náufrago del sistema</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
-                <a class="img-overlay-wrapper">
-                    <img src="../Assets/img/ErroresDelFuturo.webp" class="img-fluid rounded" alt="Película 6">
-                    <div class="img-overlay">
-                        <h5>Errores del futuro</h5>
-                    </div>
-                </a>
-            </div>
+          <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
+            <a class="img-overlay-wrapper">
+              <img src="../Assets/img/ElEspejoDeAbril.webp" class="img-fluid rounded" alt="Película 2">
+              <div class="img-overlay">
+                <h5>El espejo de Abril</h5>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
+            <a class="img-overlay-wrapper">
+              <img src="../Assets/img/CiudadOlvidada.webp" class="img-fluid rounded" alt="Película 3">
+              <div class="img-overlay">
+                <h5>Ciudad olvidada</h5>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
+            <a class="img-overlay-wrapper">
+              <img src="../Assets/img/InstintoSubterraneo.webp" class="img-fluid rounded" alt="Película 4">
+              <div class="img-overlay">
+                <h5>Instinto subterráneo</h5>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
+            <a class="img-overlay-wrapper">
+              <img src="../Assets/img/NaufragoDelSistema.webp" class="img-fluid rounded" alt="Película 5">
+              <div class="img-overlay">
+                <h5>Náufrago del sistema</h5>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item col-12 col-sm-6 col-lg-4 mb-4">
+            <a class="img-overlay-wrapper">
+              <img src="../Assets/img/ErroresDelFuturo.webp" class="img-fluid rounded" alt="Película 6">
+              <div class="img-overlay">
+                <h5>Errores del futuro</h5>
+              </div>
+            </a>
           </div>
         </div>
-    
       </div>
-    
+
     </div>
 
+  </div>
 
-              <div class="modal fade" id="modalPelicula2" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-dialog-centered">
-                  <div class="modal-content bg-dark text-white">
-                    <div class="modal-header border-0">
-                      <h5 class="modal-title descripcion-textos2" id="modalVideo1Label">
-                        Reproduciendo: A la sobra del sol
-                      </h5>
-                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body p-0">
-              
-                      <div class="ratio ratio-16x9">
-                        <video class="img-fluid w-100" autoplay muted loop playsinline>
-                          <source src="../Assets/img/videoHero2.mp4" type="video/mp4" alt="Video serie" />
-                        </video>
-              
-                      </div>
-                      <p class="mt-2 text-center descripcion-textos px-5 my-5 d-none d-md-block">"A la Sombra del Sol” es una delicada metáfora visual
-                        sobre el contraste entre luz y emoción. En lo alto de una montaña, dos personas comparten un momento íntimo
-                        justo antes del ocaso. La película explora lo que queda oculto bajo la belleza del atardecer: recuerdos no
-                        dichos, decisiones suspendidas, y la posibilidad de un nuevo comienzo. Con silencios que hablan más que las
-                        palabras, esta historia se convierte en un reflejo de lo que buscamos… cuando todo se cubre de oro y sombra.
-              
-                      </p>
-                    </div>
-                  </div>
-              
-                </div>
-              </div>
+  <div class="modal fade" id="modalPelicula2" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <h5 class="modal-title text-white-50 titulo-capitulos" id="modalVideo1Label">
+            Reproduciendo: A la sobra del sol
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
 
-       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-        });
-    </script>
-    
+          <div class="ratio ratio-16x9">
+            <video class="img-fluid w-100" autoplay muted loop playsinline>
+              <source src="../Assets/img/videoHero2.mp4" type="video/mp4" alt="Video serie" />
+            </video>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
-        crossorigin="anonymous"></script>>
+          </div>
+          <p class="mt-4 text-center descripcion-textos px-5 my-5 d-none d-md-block">"A la Sombra del Sol” es una
+            delicada metáfora visual
+            sobre el contraste entre luz y emoción. En lo alto de una montaña, dos personas comparten un momento íntimo
+            justo antes del ocaso. La película explora lo que queda oculto bajo la belleza del atardecer: recuerdos no
+            dichos, decisiones suspendidas, y la posibilidad de un nuevo comienzo. Con silencios que hablan más que las
+            palabras, esta historia se convierte en un reflejo de lo que buscamos… cuando todo se cubre de oro y sombra.
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer-custom text-white pt-5 mt-5">
+    <div class="container">
+      <div class="row text-center text-md-start align-items-center">
+        <div class="col-6 col-md-4 col-lg-4 mb-4 mb-lg-0">
+          <a href="../index.html"
+            class="text-decoration-none text-white d-flex align-items-center justify-content-center justify-content-md-start">
+            <img src="../Assets/img/Clap.png" alt="Logo" height="100" class="me-5 logo-footer" />
+          </a>
+        </div>
+        <div
+          class="col-6 col-md-4 col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center justify-content-md-center align-items-lg-center gap-4">
+          <a href="https://github.com/tomasgomez18/Proyecto-Streamming" target="_blank"
+            class="text-white fs-4 social-icon"><i class="bi bi-github"></i></a>
+          <a href="https://trello.com/b/dCRO3zYH/plataforma-streaming-grupo-2" target="_blank"
+            class="text-white fs-4 social-icon"><i class="bi bi-trello"></i></a>
+          <a href="../Pages/error404.html" target="_blank" class="text-white fs-4 social-icon"><i
+              class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 d-flex flex-column align-items-center align-items-lg-end gap-2">
+          <a href="../Pages/acercadenosotros.html" class="footer-link align-items-lg-start">Acerca de nosotros</a>
+          <a href="../Pages/contacto.html" class="footer-link ">Contacto</a>
+          <a href="../Pages/error404.html" class="footer-link">Términos y condiciones</a>
+        </div>
+      </div>
+      <hr class="my-4 border-secondary">
+      <div class="text-center small text-white-50 pb-3">
+        &copy; CLAP 2025 Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+    crossorigin="anonymous"></script>>
 </body>
+
 </html>
